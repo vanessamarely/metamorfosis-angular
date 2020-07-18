@@ -106,7 +106,7 @@ Nuestra lista se verá parecida al siguiente código, pero en la vista o **HTML*
 {% endtab %}
 {% endtabs %}
 
-En el archivo **app.component.ts** existe una línea donde encuentras el '**selector**' y ese es el que se debe añadir en el **app.component.html**
+En el archivo **menu.component.ts** existe una línea donde encuentras el '**selector**' y ese es el que se debe añadir en el **app.component.html**
 
 Copia el selector y añádelo como etiqueta en la vista del componente App.
 
