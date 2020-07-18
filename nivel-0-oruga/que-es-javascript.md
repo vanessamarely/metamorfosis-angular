@@ -535,7 +535,19 @@ Las clases son conjunto de elementos con caracteristicas comunes. Una Clase como
 
 
 
+```javascript
+class Persona {
+    constructor(nombre){
+        this.nombre = nombre;
+    }
+    
+    hablar(){
+        console.log(this.nombre + 'habla');
+    }
+}
 
+const persona1 = new Persona('Ana');
+```
 
 
 
