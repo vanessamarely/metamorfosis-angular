@@ -14,7 +14,7 @@
 * [🧠 ¿Qué es JavaScript? 🧠](nivel-0-oruga/que-es-javascript.md)
 * [🤓 ¿Qué es TypeScript? 🤓](nivel-0-oruga/que-es-typescript.md)
 * [🅰️ ¿Qué es Angular? 🅰️](nivel-0-oruga/que-es-angular.md)
-* [🧐 Conceptos básicos en Angular 🧐](nivel-0-oruga/conceptos-basicos-en-angular.md)
+* [🧐 Conceptos Básicos en Angular 🧐](nivel-0-oruga/conceptos-basicos-en-angular.md)
 * [🏗️ Nuestra primera aplicación en Angular 🏗️](nivel-0-oruga/nuestra-primera-aplicacion-en-angular.md)
 * [👩🏻‍🎓 Retos en Angular 👩🏻‍🎓](nivel-0-oruga/retos-en-angular.md)
 
