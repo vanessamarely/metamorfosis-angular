@@ -318,6 +318,7 @@ switch(tipoFruta) {
         break;
     default
         console.log("Disculpa, no tenemos ese tipo de fruta: ", tipoFruta);
+        break;
 }
 ```
 
