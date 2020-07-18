@@ -512,7 +512,7 @@ const usuarioAna= new usuario('Ana', 40);
 
 Los objetos de JavaScript provienen de Object y tienen en su interior un -_proto_- o prototype \(prototipo\), que nos permite heredar propiedades y métodos. Si necesitamos extender o sobreescribir el comportamiento de los objetos lo hacemos mediante prototype.
 
-![](../.gitbook/assets/prototype.png)
+![](../.gitbook/assets/prototype%20%281%29.png)
 
 ```javascript
 function Persona(){
