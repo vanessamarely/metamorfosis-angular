@@ -114,9 +114,9 @@ Ahora debemos unir cada uno de los links a los respectivos componentes.
 
 ## Paso 5: Uniendo los componentes a sus links 🕹️
 
-Vamos a crear un módulo para controlar todas nuestras rutas.
+Vamos a crear un módulo router, para controlar todas nuestras rutas.
 
-En la carpeta **app**, vamos a dar clic derecho y en la opción Angular Generator, seleccionaremos Module
+En la carpeta **app**, vamos a dar clic derecho y en la opción Angular Generator, seleccionaremos Module y lo llamaremos routing.
 
 En nuestro nuevo archivo vamos a incluir las rutas y para ello debemos importar el RouterModule e incluir en los import la colección de nuestras rutas.
 
@@ -135,7 +135,7 @@ RouterModule.forRoot([
       { path: 'home', component: HomeComponent },
       { path: 'skills', component: SkillsComponent },
       { path: '**', redirectTo: 'home' }
-    ])
+    ]);
 ```
 
 * Debemos también importar los componentes que estamos mencionando en la colección de rutas, para que no salga error en nuestra aplicación.
