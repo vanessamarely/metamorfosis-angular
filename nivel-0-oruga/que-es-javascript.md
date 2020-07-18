@@ -280,7 +280,7 @@ Un bucle for se repite como mencione hasta que la condición que se esta evaluan
 
 ```javascript
 const pasos = 5;
-for(let paso = 0; paso <= pasos; paso++;){
+for(let paso = 0; paso <= pasos; paso++){
     console.log("Estoy dando el siguiente paso: " + paso);
 }
 ```
