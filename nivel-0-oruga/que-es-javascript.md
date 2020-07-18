@@ -418,7 +418,7 @@ Creamos un array de dos formas:
 const arrayVacio = [];                        // creamos un array vacío
 const frutas = ['Manzanas', 'Naranjas', 'Fresas'];            
 const listaNumeros = [1, 2, 3];
-const arrayElementos = [1, 'abc' null];
+const arrayElementos = [1, 'abc', null];
 ```
 
 * Haciendo uso de la palabra reservada newArray\(\). En los paréntesis podemos asignarle los datos que va a tener nuestro array o declararlo vacío.
@@ -427,7 +427,7 @@ const arrayElementos = [1, 'abc' null];
 const arrayVacio = new Array();                    // creamos un array vacío
 const frutas = new Array('Manzanas', 'Naranjas', 'Fresas');  
 const listaNumeros = new Array(1, 2, 3);
-const arrayElementos = new Array(1, 'abc' null);
+const arrayElementos = new Array(1, 'abc', null);
 ```
 
 Para obtener los datos del array, podemos hacer referencia a su indice si deseamos obtener la data de una posicion especifica, así:
