@@ -4,7 +4,7 @@ description: Typescript es un superset de JavaScript
 
 # 🤓 ¿Qué es TypeScript? 🤓
 
-## 🤓Introducción a TypeScript🤓
+## 🤓Mini Introducción a TypeScript🤓
 
 ![](../.gitbook/assets/estructurado.png)
 
@@ -90,5 +90,20 @@ Para crear un objeto usando la clase, lo hacemos así:
 const miObjeto = new Persona();
 ```
 
+```typescript
+class Persona {
+    nombre:string;
+    constructor(nuevoNombre:string) {
+       this.nombre = nuevoNombre;
+    }
 
+    decirMiNombre() {
+       console.log(this.nombre);
+    }
+}
+```
+
+Se usa el “this”  para acceder a los atributos y métodos  de la clase. "this" hace referencia al objeto de la clase.
+
+La funcion 'constructor' es un método propio de la clase y nos permite construir el objeto.
 
