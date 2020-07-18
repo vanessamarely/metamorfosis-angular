@@ -69,6 +69,8 @@ Cuando creamos un componente o estamos usando el base de app, para incluir nuest
 <my-app></my-app>
 ```
 
+Puedes ampliar la informacion de los componentes en el siguiente link: [componentes](https://medium.com/@vanessamarely/componentes-en-angular-f25138b00c83).
+
 ## 🧑‍🎨 Directivas 🧑‍🎨
 
 Las Directivas extienden la funcionalidad del HTML usando para ello una nueva sintaxis. Con ella podemos usar lógica que será ejecutada en el DOM \(Document Object Model\).
