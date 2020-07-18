@@ -56,6 +56,10 @@ Puedes personalizarlo como gustes.
 
 El ejercicio resulto lo puedes encontrar aquí:
 
+{% embed url="https://buttons-emojis.stackblitz.io/" %}
+
+
+
 {% embed url="https://stackblitz.com/edit/buttons-emojis" %}
 
 
