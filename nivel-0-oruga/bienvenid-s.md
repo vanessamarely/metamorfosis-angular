@@ -30,7 +30,7 @@ En este nivel 0 Oruga, te preguntarás ¿qué temas encontrarás? si he escuchad
 * ¿Que es Angular?
 * Conceptos básicos en Angular
 * Nuestra primera aplicación en Angular
-* Retos en Angular
+* Reto en Angular
 
 ## . Recuerda 👀
 
