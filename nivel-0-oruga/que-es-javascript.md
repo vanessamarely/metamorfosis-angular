@@ -530,7 +530,7 @@ console.log(persona1.nombre);                    // Ana
 
 ### Clases \(Class\)
 
-Las clases son conjunto de elementos con caracteristicas comunes. Una Clase como un objeto contiene propiedades y métodos.
+Las clases son conjunto de elementos con caracteristicas comunes. Una Clase como un objeto contiene métodos y entre sus métodos se haya una función constructora, la cual recibe unos argumentos que se asignan como propiedades del this.
 
 ![](../.gitbook/assets/clase.png)
 
