@@ -52,5 +52,9 @@ Para ejcutar ciertos comandos es necesario hacer uso de la terminal. Para aquell
 
 ![](../.gitbook/assets/iterm-logo.jpg)
 
+Otra herramienta útil en windows es el manejador de paquetes [Chocolatey](https://chocolatey.org/), que seria el equivalente a [homebrew](https://brew.sh/index_es) en MacOS.
 
+![](../.gitbook/assets/download-1-.png)
+
+![](../.gitbook/assets/homebrew_logo.png)
 
