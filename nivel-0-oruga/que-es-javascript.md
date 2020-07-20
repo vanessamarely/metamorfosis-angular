@@ -497,6 +497,8 @@ delete.usuario3.edad;
 
 Para estos objetos se usa una función llamada constructora, en esta el nombre de la función será el nombre del objeto y se le colocará este nombre usando la primera letra en mayuscula inicial, para hacer uso de esta función se deberá instancia el objeto usando la palabra reservada **new** \(u operador\).
 
+![](../.gitbook/assets/objeto-constructor.png)
+
 Dentro de la función constructura se hace uso de la palabra reservada **this**, la cual va  ahacer referencia al objeto. 
 
 ```javascript
@@ -532,7 +534,7 @@ console.log(persona1.nombre);                    // Ana
 
 Las clases son conjunto de elementos con caracteristicas comunes. Una Clase como un objeto contiene métodos y entre sus métodos se haya una función constructora, la cual recibe unos argumentos que se asignan como propiedades del this.
 
-![](../.gitbook/assets/clase.png)
+![](../.gitbook/assets/clase-ejm.png)
 
 
 
