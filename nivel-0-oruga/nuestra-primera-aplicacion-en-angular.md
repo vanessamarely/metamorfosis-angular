@@ -308,6 +308,7 @@ npm install -g @angular/cli
 Para verificar que tienes instalado node.js antes del anterior comando, solo colocas en la terminar
 
 ```bash
+node -v
 npm -v
 ```
 
