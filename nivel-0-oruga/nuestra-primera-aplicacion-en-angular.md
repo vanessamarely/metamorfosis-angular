@@ -351,5 +351,11 @@ Se pueden usar cualquiera de los dos comandos anteriores, el options no es neces
 Si tienes alguna duda no dudes en contactarme. [  
 ](https://ngchallenges.gitbook.io/project/interpolacion)
 
+{% hint style="info" %}
+**Contacto**:   
+**correo** vanessamarely@gmail.com   
+**twitter**: @vanessamarely
+{% endhint %}
+
 
 
