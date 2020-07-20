@@ -12,7 +12,7 @@
 * [🎨 ¿Qué es CSS? 🎨](nivel-0-oruga/que-es-css.md)
 * [📄 Ejercicio HTML & CSS 🎨](nivel-0-oruga/ejercicio-html-and-css.md)
 * [🧠 ¿Qué es JavaScript? 🧠](nivel-0-oruga/que-es-javascript.md)
-* [🧠 Practiquemos JavaScript 🧠](nivel-0-oruga/practiquemos-javascript.md)
+* [💡 Practiquemos JavaScript 💡](nivel-0-oruga/practiquemos-javascript.md)
 * [🤓 ¿Qué es TypeScript? 🤓](nivel-0-oruga/que-es-typescript.md)
 * [🅰️ ¿Qué es Angular? 🅰️](nivel-0-oruga/que-es-angular.md)
 * [🧐 Conceptos Básicos en Angular 🧐](nivel-0-oruga/conceptos-basicos-en-angular.md)

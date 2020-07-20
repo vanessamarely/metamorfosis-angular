@@ -4,7 +4,7 @@ description: >-
   momento de ponerlos en practica.
 ---
 
-# 🧠 Practiquemos JavaScript 🧠
+# 💡 Practiquemos JavaScript 💡
 
 JavaScript es un lenguaje que es considerado fácil de aprender. Para escribir nuestro código de JavaScript lo podemos hacer en un archivo que le pondremos la extensión.js, en él podemos añadir nuestras líneas de código.Podemos ejecutar nuestras líneas directamente en nuestro navegador, si abrimos el developer tools, en la pestaña de 'console', podemos incluirlo o podemos usar codepen en la sección que dice 'JS', allí podemos añadirlo.
 
