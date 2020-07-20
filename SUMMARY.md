@@ -17,7 +17,7 @@
 * [🅰️ ¿Qué es Angular? 🅰️](nivel-0-oruga/que-es-angular.md)
 * [🧐 Conceptos Básicos en Angular 🧐](nivel-0-oruga/conceptos-basicos-en-angular.md)
 * [🏗️ Nuestra primera aplicación en Angular 🏗️](nivel-0-oruga/nuestra-primera-aplicacion-en-angular.md)
-* [👩🏻‍🎓 Retos en Angular 👩🏻‍🎓](nivel-0-oruga/retos-en-angular.md)
+* [👩🏻‍🎓 Reto en Angular 👩🏻‍🎓](nivel-0-oruga/retos-en-angular.md)
 
 ## Nivel 1 -  Crisalida
 

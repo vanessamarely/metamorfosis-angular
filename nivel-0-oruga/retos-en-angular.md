@@ -4,7 +4,7 @@ description: >-
   en los siguientes retos.
 ---
 
-# 👩🏻‍🎓 Retos en Angular 👩🏻‍🎓
+# 👩🏻‍🎓 Reto en Angular 👩🏻‍🎓
 
 ## Botones de Emojis
 
