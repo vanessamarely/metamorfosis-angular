@@ -20,19 +20,37 @@ Usaremos de manera online: **Stackblitz** y **Codepen**, te recomiendo registrar
 
 \*\*\*\*[**Stackblitz**](https://stackblitz.com/) es un IDE en la nube que te permite crear aplicaciones Web. Eso quiere decir que ¡no tienes que instalar nada para crear tu aplicación! 😎
 
+![](../.gitbook/assets/stackblitz.png)
+
 Podemos seguir esta guia para aprender como usar stackblitz. [https://ngchallenges.gitbook.io/project/guias-utiles/stackblitz](https://ngchallenges.gitbook.io/project/guias-utiles/stackblitz)
 
 [**Codepen** ](https://codepen.io/)es una herramienta de **prototipado rápido y prueba de fragmentos de código**. Solo necesitas acceder a la url de codepen y tendrás un espacio, donde podrás incluir tus líneas de HTML, CSS y JS.
 
+![](../.gitbook/assets/codepen-wordmark-display-inside-black-10x.png)
+
 De manera local en nuestras máquinas usaremos [Visual Studio Code](https://code.visualstudio.com/), te recomiendo descargarlo e instalarlo en tu computadora de acuerdo a tu sistema operativo.
+
+![](../.gitbook/assets/download.png)
 
 ## Manejador de versiones
 
 Para que no tengamos la necesidad de por cada cambio que hagamos en nuestro código y tener ese paso a paso, guardado en algun lugar, evitandonos creando multiples carpetas por versiones como lo haciamos cuando creabamos documentos en sus multiples versiones, existen unas aplicaciones que nos ayudan a manejar el versionamiento, y la que usaremos será [Github](https://github.com/). 
+
+![](../.gitbook/assets/github-logo-2-imagen.jpg)
 
 Podemos seguir la siguiente guia para crear nuestra cuenta en github: [https://ngchallenges.gitbook.io/project/guias-utiles/github](https://ngchallenges.gitbook.io/project/guias-utiles/github)
 
 ## Otras Herramientas
 
 Para hacer la instalación de Angular, de manera loca en nuestras computadoras, necesitaremos tener instalado [**node.js**](https://nodejs.org/es/) \(es un entorno en tiempo de ejecución multiplataforma\) y un manejador de paquetes como ****[**npm** ](https://www.npmjs.com/)\(Node Package Manager o simplemente npm es un gestor de paquetes\). Te recomiendo instalarlos de acuerdo a tu sistema operativo.
+
+![](../.gitbook/assets/nodejs-logo-png.png)
+
+Para ejcutar ciertos comandos es necesario hacer uso de la terminal. Para aquellos que tengan visual studio code, puede usar la terminar que esta tienen integrada, o en el cso de que tengas Windows, puedes usar [cmder](https://cmder.net/) y en el caso de MacOS, pueden usar terminal o [iterm](https://www.iterm2.com/). n el caso de linux, dependiendo del paquete de distribución existen muchas opciones \([Terminator](https://terminator-gtk3.readthedocs.io/en/latest/)\).
+
+![](../.gitbook/assets/cmder.png)
+
+![](../.gitbook/assets/iterm-logo.jpg)
+
+
 
