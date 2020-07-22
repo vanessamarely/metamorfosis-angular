@@ -14,7 +14,7 @@ En la Web las 3 capas o elementos más importantes son el HTML, CSS y JavaScript
 
 Nos permite crear el contenido de nuestro documento: texto imagenes, videos, etc.
 
-![](../.gitbook/assets/html-cheet-sheat3%20%281%29.png)
+![](../.gitbook/assets/html-cheet-sheat3%20%282%29.png)
 
 ## CSS
 
