@@ -22,7 +22,7 @@ En este nivel 1 Crisalida, te preguntarás ¿qué temas encontraré? si he escuc
 
 * Elementos de la Web
 * Herramientas que puedo usar
-* ¿Que es TypeScript?
+* TypeScript
 * ¿Que es Angular?
 * Conceptos básicos en Angular
 * Hagamos una aplicación en Angular
