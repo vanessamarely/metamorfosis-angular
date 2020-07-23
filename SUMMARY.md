@@ -26,6 +26,7 @@
 * [⚙️ Herramientas ⚙️](nivel-1-crisalida/herramientas.md)
 * [🤓 TypeScript 🤓](nivel-1-crisalida/typescript.md)
 * [🅰️ ¿Qué es Angular? 🅰️](nivel-1-crisalida/que-es-angular.md)
+* [✨ Conceptos de Angular ✨](nivel-1-crisalida/conceptos-de-angular.md)
 
 ## Nivel 2 - Mariposa
 
