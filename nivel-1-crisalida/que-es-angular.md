@@ -16,5 +16,13 @@ El 14 de septiembre del 2016 fue lanzado Angular 2, que conocemos en la actualid
 
 Actualmente Angular se encuentra en la versión 10 y cada 6 meses es lanzada una nueva versión.
 
+## 📋 Características 📋
 
+Angular es basado en componentes, los componentes son partes de la aplicación, que pueden tener una vista y se pueden reutilizar.
+
+**Modularidad**: las funcionalidades se empaquetan en módulos, que sirve como un contenedor de componentes y donde especificamos las dependecias y libre´rías que incluimos en la aplicación 📦
+
+**Compatibilidad**: compatible con los navegadores más modernos y recientes. 🆕
+
+**Fácil de aprender**: el Framework es fácil de aprender, es sencillo hacer tu primera App en Angular solo debemos aprender un poco sobre la sintaxis de Angular y algunos conceptos y  crearemos nuestra App de forma sencilla. 
 

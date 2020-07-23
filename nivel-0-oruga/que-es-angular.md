@@ -37,7 +37,7 @@ Actualmente Angular se encuentra en la versión 10.
 
 **Compatibilidad**: compatible con los navegadores más modernos y recientes. 🆕
 
-**Rapidez**: Mejora la rapidez en las aplicaciones y la nueva versión \(Angular 8\), permite una gran mejora en el rendimiento de las aplicaciones.
+**Rapidez**: Mejora la rapidez en las aplicaciones, permite una gran mejora en el rendimiento de las aplicaciones.
 
 **Fácil de aprender**: el Framework es fácil de aprender, es sencillo hacer tu primera App en Angular solo debemos aprender un poco sobre la sintaxis de Angular y algunos conceptos y  crearemos nuestra App de forma sencilla. 
 
