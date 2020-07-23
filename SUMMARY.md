@@ -23,6 +23,7 @@
 
 * [🐚 Bienvenid@s 🐚](nivel-1-crisalida/bienvenid-s.md)
 * [🗺️ Elementos de la Web 🗺️](nivel-1-crisalida/elementos-de-la-web.md)
+* [⚙️ Herramientas ⚙️](nivel-1-crisalida/herramientas.md)
 * [🤓 TypeScript 🤓](nivel-1-crisalida/typescript.md)
 
 ## Nivel 2 - Mariposa
