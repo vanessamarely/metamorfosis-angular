@@ -12,6 +12,10 @@ La metadata para un componente nos permite conocer detalles sobre el template, q
 
 La metadata de los servicios proveen información, que puede ser compartida en los diferentes componentes, usando el patron de diseño de DI - Dependency Injection o Inyección de Dependencias.
 
+Una aplicación de componente, define muchas vistas que estan organizados jerarquicamente.
+
+Angular posee un servicio de Enrutamiento o Router, que nos permite crear una SPA \(Single Page Aplication\), que nos ayuda a manejar la navegación de nuestra aplicación entre las vistas. 
+
 
 
 
