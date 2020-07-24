@@ -27,6 +27,8 @@
 * [🤓 TypeScript 🤓](nivel-1-crisalida/typescript.md)
 * [🅰️ ¿Qué es Angular? 🅰️](nivel-1-crisalida/que-es-angular.md)
 * [✨ Conceptos de Angular ✨](nivel-1-crisalida/conceptos-de-angular.md)
+* [⌛Hagamos una aplicación en Angular⌛](nivel-1-crisalida/hagamos-una-aplicacion-en-angular.md)
+* [👩🏻‍🎓 Reto en Angular 👩🏻‍🎓](nivel-1-crisalida/reto-en-angular.md)
 
 ## Nivel 2 - Mariposa
 

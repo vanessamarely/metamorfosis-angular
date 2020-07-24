@@ -26,7 +26,7 @@ En este nivel 1 Crisalida, te preguntarás ¿qué temas encontraré? si he escuc
 * ¿Que es Angular?
 * Conceptos básicos en Angular
 * Hagamos una aplicación en Angular
-* Retos en Angular
+* Reto en Angular
 
 ## . Recuerda 👀
 
