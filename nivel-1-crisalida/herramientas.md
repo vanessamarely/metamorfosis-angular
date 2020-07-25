@@ -46,7 +46,7 @@ Para hacer la instalación de Angular, de manera loca en nuestras computadoras, 
 
 ![](../.gitbook/assets/nodejs-logo-png.png)
 
-Para ejcutar ciertos comandos es necesario hacer uso de la terminal. Para aquellos que tengan visual studio code, puede usar la terminar que esta tienen integrada, o en el cso de que tengas Windows, puedes usar [cmder](https://cmder.net/) y en el caso de MacOS, pueden usar terminal o [iterm](https://www.iterm2.com/). n el caso de linux, dependiendo del paquete de distribución existen muchas opciones \([Terminator](https://terminator-gtk3.readthedocs.io/en/latest/)\).
+Para ejcutar ciertos comandos es necesario hacer uso de la terminal. Para aquellos que tengan visual studio code, pueden usar la terminal que esta tiene integrada, o en el caso de que tengas Windows, puedes usar [cmder](https://cmder.net/) y en el caso de MacOS, pueden usar terminal o [iterm](https://www.iterm2.com/). Para linux, dependiendo del paquete de distribución existen muchas opciones \([Terminator](https://terminator-gtk3.readthedocs.io/en/latest/)\).
 
 ![](../.gitbook/assets/cmder.png)
 
