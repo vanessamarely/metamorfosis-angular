@@ -155,7 +155,7 @@ export class AppModule { }
 ```
 {% endcode %}
 
-Importamos unas dependencias en nuestro nuevo archivo llamado **login.service.ts**,  y añadimos en el constructor lo siguiente: **http: HttpClient** , haciendo uso de la inyección de dependencias \(Patron de diseño\)
+Importamos unas dependencias en nuestro nuevo archivo llamado **login.service.ts**,  y añadimos en el constructor lo siguiente: **http: HttpClient** , haciendo uso de la inyección de dependencias \(Patron de diseño\). Este http, va a ser uso de lo que tenga el HttpClient, que este hace parte del nuevo modulo que incluimos en el app.module.ts
 
 {% code title="login.service.ts" %}
 ```typescript
@@ -172,7 +172,11 @@ export class LoginService {
 ```
 {% endcode %}
 
-En nuestro archivo **login.service.ts** crearemos una función para obtener la data del API, la llamaremos **getApi**. Crearemos una constante donde incluiremos la url de la API.
+En nuestro archivo **login.service.ts** crearemos una función para obtener la data del API, la llamaremos **getApi**. Crearemos una constante donde incluiremos la url de la API. Adicional a nuestra función le incluiremos un parametro de entrada que será el nombre de usuario del dueño del repositorio.
+
+En nuestra función incluimos un return que hace uso del parametro private del constructor que llama al get propio del http, que hace uso de las funciones del HttpClient, que nos hace este método es que nos creo un Observable que va a contener la data que se recibe del api. En nuestro caso estamos usando la api de github, entonces en la función getApi, vamos a retornar ese observable que contiene la data que recibimos de github.
+
+Como parametro de this.http.get\( parametros \) puedes observar a continuación que le pasamos nuestra variable **apiRoot** adicional le pasamos el username que es el que obtendremos de la función del componente \(la data que digita el usuario en nuestro formulario\) y al colocarle al final /repos, obtendremos la lista de repositorios, de no incluirsela, obtendremos solo la información del usuario dueño de la cuenta de github.
 
 {% code title="login.service.ts" %}
 ```typescript
@@ -193,6 +197,30 @@ export class LoginService {
 }
 ```
 {% endcode %}
+
+Si nosotros colocaramos lo siguiente en nuestra función getApi, sin "/repos" de la siguiente forma:
+
+{% code title="login.service.ts" %}
+```typescript
+import { Injectable } from '@angular/core';
+import { HttpClient} from '@angular/common/http';
+
+@Injectable()
+export class LoginService {
+  
+  private apiRoot: string = 'https://api.github.com/users/';
+  
+  constructor(private http: HttpClient) { }
+  
+  getApi(username: string) {
+    return this.http.get(`${this.apiRoot}${username}`);
+  }
+
+}
+```
+{% endcode %}
+
+Lo anterior nos daria como resultado la información de la cuenta perteneciente al usuario del que incluimos la información.
 
 ## Paso 5: Hagamos la lógica que llama a nuestro servicio  🍭
 
@@ -266,7 +294,7 @@ Ahora podemos probar el llamado de nuestra API colocando en el campo de texto el
 
 Crearemos una variable llamada **responseList**, donde almacenaremos el resultado del llamado de nuestra API. 
 
-Si observas la url de nuestra API, al final tiene '/**repos**', con esta palabra traeremos la lista de todos los repositorios del usuario que estamos consultando, puedes probar quitándole esta palabra y observarás que traerás la información de usuario \(la imagen de perfil, su id en Github, entre otros datos\) .
+Si observas la url de nuestra API, en el servicio al final tiene '/**repos**' \(en el apiRoot\), con esta palabra traeremos la lista de todos los repositorios del usuario que estamos consultando, puedes probar quitándole esta palabra y observarás que traerás la información de usuario \(la imagen de perfil, su id en Github, entre otros datos\) .
 
 {% code title="app.component.ts" %}
 ```typescript
