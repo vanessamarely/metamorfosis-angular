@@ -297,7 +297,13 @@ Como puedes notar no hay mucho contenido en nuestros componentes, entonces podem
 
 En cada componente cambia su contenido, si estas creando una SPA personal, tipo portafolio añade tu información personal con imagenes.
 
-De lo que creamos anteriormente puedes ver el ejemplo aquí: [https://stackblitz.com/edit/routing-challenge1](https://stackblitz.com/edit/routing-challenge1)
+De lo que creamos anteriormente puedes ver el ejemplo aquí: 
+
+{% embed url="https://stackblitz.com/edit/routing-challenge1?embed=1&file=src/app/app.component.ts" %}
+
+
+
+
 
 ## Aplicación local
 
