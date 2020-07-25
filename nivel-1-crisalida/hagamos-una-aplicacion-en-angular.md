@@ -352,6 +352,8 @@ npm -v
 ng new my-app
 ```
 
+![](../.gitbook/assets/image%20%282%29.png)
+
 Con ese comando indicamos que queremos crear una nueva aplicación. Cuando estes instalando te va a preguntar si deseas añadir el routing, le escribes  "Y" \(seria yes\), te mostrá algo similar a esto:  'Would you like to add Angular Routing?'. Eso es lo unico que necesitamos decirle Y.  
 Cuando te pregunte por el stylescheet selecciona CSS.
 
