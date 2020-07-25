@@ -139,13 +139,50 @@ Antiguamente cuando se iniciaron a crear páginas Web, el contenido de ellas era
 
 ## Formularios
 
+Un formulario nos permite recolectar datos, sea información personal del usuario, comentarios, sugerencias, autenticarnos a una página, entre otros usos.
 
+La librería@angular/forms, nos permite hacer uso de los formularios en Angular.
+
+Hay tres tipos de formularios en Angular:
+
+* Formularios de Plantillas - Template Driven
+
+Estos formularios nos permiten enlazar los datos hacer el data binding, desde el componente a la vista \(plantilla, HTML\), usando la sintaxis del banana box: \[\(nombreDeVariable\)\]. Este tipo de formularios son muy buenos para hacer cosas sencillas y nos permite usar el principio KISS \(acrónimo de Keep It Simple Stupid\).
+
+* Formularios Reactivos - Reactive Forms
+
+Los formularios reactivos tienen la particularidad que la manipulación de los datos,  los elementos del HTML y sus validaciones, se hacen principalmente en el componente.
+
+* Formularios Dinámicos - Dynamic Forms
+
+Los formularios dinámicos, usan un patron usando una meta descripción para construirlos. Usan la API de los formularios reactivos en su construcción. 
 
 
 
 ## Servicios
 
+Un servicio nos permite compartir funcionalidades y la data que solicitamos al servidor, para poderla compartir sin problema entre componentes.
 
+{% hint style="info" %}
+Un servicio sigue el patrón _**Singletón**_, sirve como un recurso compartido el cual aisla la implementación de un contexto global, es decir, puedo referenciarlo en varios lugares y llamar sus funciones.
+
+Un _**patrón de diseño**_, es una forma reutilizable de resolver un problema común.
+
+[https://devexperto.com/patrones-de-diseno-software/](https://devexperto.com/patrones-de-diseno-software/)
+{% endhint %}
+
+Un servicio de Angular usa  el decorador `@Injectable()` que le indica a Angular que este servicio puede tener dependencias inyectadas.
+
+```typescript
+import { Injectable } from '@angular/core';
+
+@Injectable()
+export class HeroService {
+
+  constructor() { }
+
+}
+```
 
 
 
