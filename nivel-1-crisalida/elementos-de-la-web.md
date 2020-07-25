@@ -20,6 +20,8 @@ Nos permite crear el contenido de nuestro documento: texto imagenes, videos, etc
 
 Nos permite darle formato a nuestro contenido. Ponerlo bonito, que nuestro documento se vea agradable a la vista del usuario.
 
+![](../.gitbook/assets/eejfjxdxsaageyh.png)
+
 ## JavaScript
 
 Nos permite manejar las diferentes interacciones que nuestro usuario pueda tener con el contenido. Se pueden manejar diferentes eventos con él, incluso se puede editar el formato del documento.
