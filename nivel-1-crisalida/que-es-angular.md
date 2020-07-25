@@ -22,7 +22,7 @@ Actualmente Angular se encuentra en la versión 10 y cada 6 meses es lanzada una
 
 Angular es basado en componentes, los componentes son partes de la aplicación, que pueden tener una vista y se pueden reutilizar.
 
-**Modularidad**: las funcionalidades se empaquetan en módulos, que sirve como un contenedor de componentes y donde especificamos las dependecias y libre´rías que incluimos en la aplicación 📦
+**Modularidad**: las funcionalidades se empaquetan en módulos, que sirve como un contenedor de componentes y donde especificamos las dependecias y librerías que incluimos en la aplicación 📦
 
 **Compatibilidad**: compatible con los navegadores más modernos y recientes. 🆕
 
