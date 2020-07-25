@@ -6,21 +6,21 @@ description: >-
 
 # ✨ Conceptos de Angular ✨
 
-Se puede decir que Angular esta compuesto de componentes, modulos y servicios. Estos tres son clases que usan decoradores, los cuales marcan su tipo y poseen una metadata que especifica a Angular, como usarlos.
+Se puede decir que **Angular** esta compuesto de componentes, modulos y servicios. Estos tres son clases que usan decoradores, los cuales marcan su tipo y poseen una metadata que especifica a **Angular**, como usarlos.
 
-La metadata para un componente nos permite conocer detalles sobre el template, que define la vista, y los estilos que esta puede tener. En un template podemos encontrar el lenguaje de marcado o HTML, ademas de las directivas y el binding, que permiten a Angular editar el HTML antes de que sea renderizado.
+La metadata para un componente nos permite conocer detalles sobre el template, que define la vista, y los estilos que esta puede tener. En un template podemos encontrar el lenguaje de marcado o **HTML**, ademas de las directivas y el binding, que permiten a **Angular** editar el **HTML** antes de que sea renderizado.
 
-La metadata de los servicios proveen información, que puede ser compartida en los diferentes componentes, usando el patron de diseño de DI - Dependency Injection o Inyección de Dependencias.
+La metadata de los servicios proveen información, que puede ser compartida en los diferentes componentes, usando el patron de diseño de **DI - Dependency Injection** o **Inyección de Dependencias**.
 
 Una aplicación de componente, define muchas vistas que estan organizados jerarquicamente.
 
-Angular posee un servicio de Enrutamiento o Router, que nos permite crear una SPA \(Single Page Aplication\), que nos ayuda a manejar la navegación de nuestra aplicación entre las vistas. 
+**Angular** posee un servicio de Enrutamiento o **Router**, que nos permite crear una **SPA** \(**Single Page Aplication**\), que nos ayuda a manejar la navegación de nuestra aplicación entre las vistas. 
 
 
 
 ## 🏺 Módulos 🏺
 
-Los módulos como mencione son contenedores, en se hace referencia a los componentes, a otros módulos que pueden contener otros componentes, a los servicios y otros archivos que necesitemos para la construcción de diferentes elementos de Angular o uso de otras librerías. Se encuentra normalmenteel archivo como. 'nombrearchivo.module.ts'.
+Los módulos como mencione, son contenedores, en donde se hace referencia a los componentes, a otros módulos que pueden contener otros componentes, a los servicios y otros archivos que necesitemos para la construcción de diferentes elementos de Angular o uso de otras librerías. Se encuentra normalmente el archivo como: 'nombrearchivo.module.ts'.
 
 La estructura del module es como la siguiente:
 
@@ -36,7 +36,7 @@ export class AppModule {}
 
 ## 📦 Componente 📦
 
-Los componentes de Angular son donde vamos a estructurar nuestra aplicación. Cuando construmos una aplicación analizamos cual va a ser le contenedor de la página, y que elementos internamente vamos a separar el componentes que nos van a ayudar con la lógica de negocio de la página o solo a mostrar un componente visual \(sea solo un boton, o un menu, un header, etc.\)
+Los componentes de Angular son donde vamos a estructurar nuestra aplicación. Cuando construimos una aplicación analizamos cual va a ser le contenedor de la página, y que elementos internamente vamos a separar el componentes que nos van a ayudar con la lógica de negocio de la página o solo a mostrar un componente visual \(sea solo un boton, o un menu, un header, etc.\)
 
 
 
@@ -134,7 +134,7 @@ En Angular los enlaces se manejan con el atributo routerLink, donde especificamo
 
 Una SPA es una aplicación Web donde todas las pantallas con las que vaya a interactuar el usuario las muestra en una misma página.
 
-Antiguamente cuando se iniciaron a crear páginas Web, el contenido de ellas era estatico y teniamos que crear un documento por página y algunos elementos no se reutilizaban; hablando de un header o un menu. Cuando se empezaron a crear las páginas dinamicas, que el contenido venia desde una petición a una base de datos, se empezaron a crear páginas más robustas que terminarón en aplicaciones Web; y para reutilizar componentes y evitar crear multiples documentos conceptos cmo las SPA fueron introducidos para facilitarnos el trabajo.  
+Antiguamente cuando se iniciaron a crear páginas Web, el contenido de ellas era estatico y teniamos que crear un documento por página y algunos elementos no se reutilizaban; hablando de un header o un menu. Cuando se empezaron a crear las páginas dinamicas, que el contenido venia desde una petición a una base de datos, se empezaron a crear páginas más robustas que terminarón en aplicaciones Web; y para reutilizar componentes y evitar crear multiples documentos HTML, conceptos como las SPA fueron introducidos para facilitarnos el trabajo.  
 
 
 ## Formularios
