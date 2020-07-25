@@ -34,7 +34,7 @@ De manera local en nuestras máquinas usaremos [Visual Studio Code](https://code
 
 ## Manejador de versiones
 
-Para que no tengamos la necesidad de por cada cambio que hagamos en nuestro código y tener ese paso a paso, guardado en algun lugar, evitandonos creando multiples carpetas por versiones como lo haciamos cuando creabamos documentos en sus multiples versiones, existen unas aplicaciones que nos ayudan a manejar el versionamiento, y la que usaremos será [Github](https://github.com/). 
+Para que no tengamos la necesidad de por cada cambio que hagamos en nuestro código y tener ese paso a paso, guardado en algun lugar, evitandonos crear multiples carpetas por versiones como lo haciamos cuando creabamos documentos en sus multiples versiones, existen unas aplicaciones que nos ayudan a manejar el versionamiento, y la que usaremos será [Github](https://github.com/). 
 
 ![](../.gitbook/assets/github-logo-2-imagen.jpg)
 
