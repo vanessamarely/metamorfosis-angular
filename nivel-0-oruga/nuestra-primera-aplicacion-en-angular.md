@@ -297,6 +297,8 @@ Como puedes notar no hay mucho contenido en nuestros componentes, entonces podem
 
 En cada componente cambia su contenido, si estas creando una SPA personal, tipo portafolio añade tu información personal con imagenes.
 
+De lo que creamos anteriormente puedes ver el ejemplo aquí: [https://stackblitz.com/edit/routing-challenge1](https://stackblitz.com/edit/routing-challenge1)
+
 ## Aplicación local
 
 Hasta este punto sabes como crear una aplicación en stackblitz. Para crear esta misma aplicación localmente debes tener instalado node.js y un IDE \(Visual Studio Code es una buena opcion\). Una vez lo instales debemos en tu terminal preferida, instalar Angular usando el siguiente comando:
