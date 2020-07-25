@@ -186,8 +186,8 @@ export class LoginService {
   
   constructor(private http: HttpClient) { }
   
-  getApi() {
-    return this.http.get(this.apiRoot);
+  getApi(username: string) {
+    return this.http.get(`${this.apiRoot}${username}/repos`);
   }
 
 }
