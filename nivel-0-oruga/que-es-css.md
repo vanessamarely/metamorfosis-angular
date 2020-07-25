@@ -255,3 +255,19 @@ Si tomaramos una analogia de la vida real, un vecindario, especificamente una ca
 
 Existen mucha información sobre CSS, de sus propiedades y reglas las cuales pueden ampliar en el siguiente link: [mdn](https://developer.mozilla.org/es/docs/Web/CSS).
 
+## Recursos Útiles
+
+{% embed url="http://flukeout.github.io/" %}
+
+
+
+{% embed url="https://www.samanthaming.com/flexbox30/" %}
+
+{% embed url="https://flexboxfroggy.com/" %}
+
+{% embed url="http://www.flexboxdefense.com/" %}
+
+{% embed url="https://cssgridgarden.com/" %}
+
+
+

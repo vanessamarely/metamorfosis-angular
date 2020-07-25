@@ -12,7 +12,7 @@ Angular es un framework que esta compuesto de componentes, entre la estructura q
 
 ## 🏺 Módulos 🏺
 
-Los módulos como mencione son contenedores, en se hace referencia a los componentes, a otros módulos que pueden contener otros componentes, a los servicios y otros archivos que necesitemos para la construcción de diferentes elementos de Angular o uso de otras librerías. Se encuentra normalmenteel archivo como. 'nombrearchivo.module.ts'.
+Los módulos como mencione son contenedores, en donde se hace referencia a los componentes, a otros módulos que pueden contener otros componentes, a los servicios y otros archivos que necesitemos para la construcción de diferentes elementos de Angular o uso de otras librerías. Se encuentra normalmenteel archivo como: 'nombrearchivo.module.ts'.
 
 La estructura del module es como la siguiente:
 
@@ -80,7 +80,7 @@ Cada Directiva que usamos tiene un nombre, y determina donde puede ser usada, se
 Se dividen en tres tipos diferentes:
 
 * Directivas de Atributo: Alteran la apariencia o comportamiento de un elemento del DOM. Son usados como atributos de los elementos.
-* Directivas de estructurales: Nos permite añadir, manipular o eliminar  elementos del DOM.
+* Directivas estructurales: Nos permite añadir, manipular o eliminar  elementos del DOM.
 * Componentes: Las Directivas de Componente son directivas con un Template.
 
 Para ampliar un poco más la información de Directivas y como usarla, puedes leer este artículo: [Directivas](https://medium.com/@vanessamarely/directivas-en-angular-efb8a8cf78e0)
@@ -91,7 +91,7 @@ Se le llama Data Binding o enlace de Datos, a la técnica que nos sirve de puent
 
 Tipos Binding de datos
 
-* One Way \(una sola vía\) . Los cambios solo se reflejan en la vista o modelo, pero no hay sincronia enre ambos frente a una actualización de la data.
+* One Way \(una sola vía\) . Los cambios solo se reflejan en la vista o modelo, pero no hay sincronia entre ambos frente a una actualización de la data.
 * Two Way \(dos vias\). Se usa generalmente en los formularios, ya que se desea que el usuario ingrese la información, esta se actualice correctamente.
 
 
