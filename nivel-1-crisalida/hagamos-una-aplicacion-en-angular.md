@@ -176,7 +176,7 @@ En nuestro archivo **login.service.ts** crearemos una función para obtener la d
 
 En nuestra función incluimos un return que hace uso del parametro private del constructor que llama al get propio del http, que hace uso de las funciones del HttpClient, que nos hace este método es que nos creo un Observable que va a contener la data que se recibe del api. En nuestro caso estamos usando la api de github, entonces en la función getApi, vamos a retornar ese observable que contiene la data que recibimos de github.
 
-Como parametro de this.http.get\( parametros \) puedes observar a continuación que le pasamos nuestra variable **apiRoot** adicional le pasamos el username que es el que obtendremos de la función del componente \(la data que digita el usuario en nuestro formulario\) y al colocarle al final /repos, obtendremos la lista de repositorios, de no incluirsela, obtendremos solo la información del usuario dueño de la cuenta de github.
+Como parametro de this.http.get\( parametros \) puedes observar a continuación que le pasamos nuestra variable **apiRoot** adicional le pasamos el username que es el que obtendremos de la función del componente \(la data que digita el usuario en nuestro formulario\) y al colocarle al final "**/repos**", obtendremos la lista de repositorios, de no incluirsela, obtendremos solo la información del usuario dueño de la cuenta de github.
 
 {% code title="login.service.ts" %}
 ```typescript
@@ -224,7 +224,7 @@ Lo anterior nos daria como resultado la información de la cuenta perteneciente 
 
 ## Paso 5: Hagamos la lógica que llama a nuestro servicio  🍭
 
-En nuestro archivo **app.component.ts**, en nuestra función **login**, crearemos un 'Observable' que nos permitirá subscribirnos a la petición que hacemos de los datos, usando la variable que definimos con la ruta del API de **Github**.
+En nuestro archivo **app.component.ts**, en nuestra función **login**, nos vamos a subscribir al orservable, que retorna la función getApi, que retorna  la petición que hacemos de los datos, usando la variable que definimos con la ruta del API de **Github**.
 
 También importaremos en nuestro **app.component.ts** el servicio que creamos, **LoginService,** y crearemos una función **constructor** donde declararemos una función privada del servicio. ****
 
@@ -255,7 +255,7 @@ export class AppComponent {
 
 En la función login\(\), vamos a  crear una constante donde asignamos la propiedad del username. 
 
-En el servicio login, como notaste retornamos una función, que trae la respuesta de nuestra API. En esa función hacemos uso del  [HttpClient](https://angular.io/api/common/http/HttpClient), que es un observable, entonces en nuestro componente para obtener la data necesitamos subscribirnos.
+En el servicio login, como notaste retornamos una función, que trae la respuesta de nuestra API. En esa función hacemos uso del  [HttpClient](https://angular.io/api/common/http/HttpClient), que es un observable, entonces en nuestro componente para obtener la data necesitamos subscribirnos. 
 
 {% code title="app.component.ts" %}
 ```typescript
@@ -343,7 +343,7 @@ Teniamos un parrafo, cuando creamos nuestro HTML, allí mostraremos el modelo de
 ```
 
 {% hint style="info" %}
-Despues de model notasrás que hay un pipe, en angular nos pipes nos permiten dar formato a la data en la vista.
+Despues de model notarás que hay un pipe, en angular los pipes nos permiten dar formato a la data en la vista.
 {% endhint %}
 
 Ahora para mostrar nuestra data, te invito a crees una etiqueta section y apliques la interpolación, ademas hagamos uso de las directivas \*ngIf, para que se oculte esta sección y que solo aparezca cuando haya data, como respuesta al llamado de nuestra API.
@@ -355,9 +355,19 @@ Ahora para mostrar nuestra data, te invito a crees una etiqueta section y apliqu
 </section>
 ```
 
-Puedes ver lo que hemos hecho aquí: [https://angular-ivy-o2htnx.stackblitz.io](https://angular-ivy-o2htnx.stackblitz.io)
+Puedes ver lo que hemos hecho aquí:
+
+{% embed url="https://stackblitz.com/edit/angular-ivy-logingithub?embed=1&file=src/app/app.component.ts" %}
+
+
 
 La data se va a mostrar muy desordenada, así que nuestra tarea es ordenarla, en una tabla. Usa una directiva llamada \*ngFor para recorrer la respuesta de nuestra API en la vista. Aquí encontrarás una guía sobre [directivas](https://ngchallenges.gitbook.io/project/directivas), para que conozcas el uso del \*ngFor.
+
+{% embed url="https://stackblitz.com/edit/angular-ivy-logingithub?embed=1&file=src/app/app.component.html" %}
+
+{% embed url="https://stackblitz.com/edit/angular-ivy-logingithub-1mhykn?embed=1&file=src/app/app.component.html" %}
+
+
 
 ## Crea tu  App usando el angular-cli
 
