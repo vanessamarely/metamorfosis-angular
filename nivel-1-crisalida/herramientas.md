@@ -42,11 +42,11 @@ Podemos seguir la siguiente guia para crear nuestra cuenta en github: [https://n
 
 ## Otras Herramientas
 
-Para hacer la instalación de Angular, de manera loca en nuestras computadoras, necesitaremos tener instalado [**node.js**](https://nodejs.org/es/) \(es un entorno en tiempo de ejecución multiplataforma\) y un manejador de paquetes como ****[**npm** ](https://www.npmjs.com/)\(Node Package Manager o simplemente npm es un gestor de paquetes\). Te recomiendo instalarlos de acuerdo a tu sistema operativo.
+Para hacer la instalación de Angular, de manera local en nuestras computadoras, necesitaremos tener instalado [**node.js**](https://nodejs.org/es/) \(es un entorno en tiempo de ejecución multiplataforma\) y un manejador de paquetes como ****[**npm** ](https://www.npmjs.com/)\(Node Package Manager o simplemente npm es un gestor de paquetes\). Te recomiendo instalarlos de acuerdo a tu sistema operativo.
 
 ![](../.gitbook/assets/nodejs-logo-png.png)
 
-Para ejcutar ciertos comandos es necesario hacer uso de la terminal. Para aquellos que tengan visual studio code, pueden usar la terminal que esta tiene integrada, o en el caso de que tengas Windows, puedes usar [cmder](https://cmder.net/) y en el caso de MacOS, pueden usar terminal o [iterm](https://www.iterm2.com/). Para linux, dependiendo del paquete de distribución existen muchas opciones \([Terminator](https://terminator-gtk3.readthedocs.io/en/latest/)\).
+Para ejecutar ciertos comandos es necesario hacer uso de la terminal. Para aquellos que tengan visual studio code, pueden usar la terminal que esta tiene integrada, o en el caso de que tengas Windows, puedes usar [cmder](https://cmder.net/) y en el caso de MacOS, pueden usar terminal o [iterm](https://www.iterm2.com/). Para linux, dependiendo del paquete de distribución existen muchas opciones \([Terminator](https://terminator-gtk3.readthedocs.io/en/latest/)\).
 
 ![](../.gitbook/assets/cmder.png)
 
