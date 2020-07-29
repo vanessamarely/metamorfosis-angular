@@ -27,7 +27,7 @@ En este nivel 2 Mariposa, te preguntarás ¿qué temas encontraré?, tengo expri
 * ¿Que es TypeScript?
 * ¿Que es Angular?
 * Conceptos básicos en Angular
-* hagamos una SPA \(Single Page Aplication\) en Angular
+* hagamos APP en Angular
 * Retos en Angular
 
 ## . Recuerda 👀
