@@ -6,13 +6,13 @@ description: >-
 
 # Elementos de la Web
 
-En la Web las 3 capas o elementos más importantes son el HTML, CSS y JavaScript.
+Haciendo una repetición de lo que mencionamos en el nivel anterior, en la Web existe 3 capas o elementos muy importantes, que son el HTML, CSS y JavaScript.
 
 ![](../.gitbook/assets/image.png)
 
 ## HTML
 
-Nos permite crear el contenido de nuestro documento: texto imagenes, videos, etc.
+Nos permite crear el contenido de nuestro documento: texto imagenes, videos, etc. Este contenido lo hacemos de forma semántica.
 
 ![](../.gitbook/assets/html-cheet-sheat3%20%282%29.png)
 
