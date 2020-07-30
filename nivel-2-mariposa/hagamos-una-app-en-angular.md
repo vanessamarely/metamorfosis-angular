@@ -28,7 +28,50 @@ Seleccionamos el texto del archivo **app.component.html**, lo borramos \(presion
 
 ![](https://gblobscdn.gitbook.com/assets%2F-LW1Rd6Lo-WMisT20MSI%2F-Lfm1buzeVgzyc9sla4K%2F-LfmHJVm7_7cFa8fmSA3%2FWebp.net-gifmaker%20%281%29.gif?alt=media&token=8924bfbd-4c41-4857-b397-9e9f32e455de)
 
-## Paso 2: Crearemos un servicio 💆
+## Paso 2: Crearemos varios componentes 💪
+
+Cuando visitas una página web, puedes observar que ella tiene muchas secciones como información de una empresa/producto, detalles de servicios, información de contacto entre otras. En este paso crearemos varios componentes, que serán donde iremos a colocar cada una de las secciones de nuestra página.
+
+Dando clic derecho sobre la carpeta App, se desplegará un menú, en el seleccionaremos la opción **Angular Generator** y luego seleccionamos componente.
+
+Nos aparece un campo de texto donde colocaremos el nombre para nuestro componente.
+
+Le colocaremos el nombre home y presionamos enter y se nos creará nuestro nuevo componente.
+
+Repetiremos el mismo paso para la creación del componente para crear otro componente más, lo llamaremos topmovies.
+
+## Paso 3: Añadiendo un Menu 📋
+
+Añadamos un componente para crear nuestro menú en él.
+
+Dando clic derecho sobre la carpeta App, se desplegará un menú, en el seleccionaremos la opción **Angular Generator** y luego seleccionamos componente.
+
+Nos aparece un campo de texto donde colocaremos el nombre para nuestro componente.
+
+Le colocaremos el nombre "menu" y presionamos enter y se nos creará nuestro nuevo componente.
+
+En el archivo **menu.component.html** vamos a poner la etiqueta &lt;nav&gt; donde pondremos cada uno de los links que nos llevarán a cada componente. Esos links los pondremos en una lista.
+
+Nuestra lista se verá parecida al siguiente código, pero en la vista o **HTML** aún  no veremos nuestra lista hasta que la incluyamos en nuestro componente  App. 
+
+{% tabs %}
+{% tab title="menu.component.html" %}
+```markup
+<nav>
+  <ul>
+    <li><a>Home</a></li>
+    <li><a>Top Movies</a></li>
+  </ul>
+</nav>
+```
+{% endtab %}
+{% endtabs %}
+
+En el archivo **menu.component.ts** existe una línea donde encuentras el '**selector**' y ese es el que se debe añadir en el **app.component.html**
+
+Copia el selector y añádelo como etiqueta en la vista del componente App.
+
+## Paso 4: Crearemos un servicio 💆
 
 Crearemos un 'servicio' dando clic sobre la carpeta 'app', seleccionamos 'service', nombramos el servicio como: '**movies**', damos enter y se nos creará un archivo llamado: **movies.service.ts**
 
