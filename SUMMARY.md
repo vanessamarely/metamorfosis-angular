@@ -36,4 +36,6 @@
 * [🕸️Elementos de la Web🕸️](nivel-2-mariposa/elementos-de-la-web.md)
 * [⚙️Herramientas⚙️](nivel-2-mariposa/herramientas.md)
 * [🅰️ ¿Qué es Angular? 🅰️](nivel-2-mariposa/que-es-angular.md)
+* [✨ Conceptos de Angular ✨](nivel-2-mariposa/conceptos-de-angular.md)
+* [⌛Hagamos una app en Angular⌛](nivel-2-mariposa/hagamos-una-app-en-angular.md)
 
