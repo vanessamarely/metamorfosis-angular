@@ -71,7 +71,133 @@ En el archivo **menu.component.ts** existe una línea donde encuentras el '**sel
 
 Copia el selector y añádelo como etiqueta en la vista del componente App.
 
-## Paso 4: Crearemos un servicio 💆
+## Paso 4: Uniendo los componentes a sus links 🕹️
+
+Vamos a crear un módulo router, para controlar todas nuestras rutas.
+
+En la carpeta **app**, vamos a dar clic derecho y en la opción Angular Generator, seleccionaremos Module y lo llamaremos routing.
+
+En nuestro nuevo archivo vamos a incluir las rutas y para ello debemos importar Routes y el RouterModule e incluir en los import la colección de nuestras rutas.
+
+* Incluimos el import
+
+```typescript
+import { Routes, RouterModule } from '@angular/router';
+```
+
+* Debemos también importar los componentes que estamos mencionando en la colección de rutas, para que no salga error en nuestra aplicación.
+
+```typescript
+import { HomeComponent } from '../home/home.component';
+import { TopMoviesComponent } from '../topmovies/topmovies.component';
+```
+
+También podemos crear una constante donde almacenemos la colección de nuestras rutas, la llamaremos "**routes**".
+
+Ademas en los imports icluiremos cada una de las rutas haciendo uso de forRoute\(\) en los imports del decorador del NgModule.
+
+{% tabs %}
+{% tab title="routing.module.ts" %}
+```typescript
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { HomeComponent } from '../home/home.component';
+import { TopMoviesComponent } from '../topmovies/topmovies.component';
+
+const routes: Routes = [
+  { path: 'home', component: HomeComponent },
+  { path: 'topmovies', component: TopMoviesComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class RoutingModule { }
+```
+{% endtab %}
+{% endtabs %}
+
+* Aún no hemos incluido el archivo routing.module en nuestro app, para esto en el archivo **app.module.ts**, importamos nuestro archivo **routing.module.ts**
+
+{% tabs %}
+{% tab title="app.module.ts" %}
+```typescript
+import { RoutingModule } from './routing/routing.module';
+```
+{% endtab %}
+{% endtabs %}
+
+Incluimos en la colección de imports nuestro '**RoutingModule**'
+
+```typescript
+imports:      [ BrowserModule, FormsModule, RoutingModule ],
+```
+
+En nuestro **app.module.ts** aparecen importados los componentes que ya incluimos en el **routing.module.ts**, entonces lo que haremos es borrar los que ya están en el routing de nuestro **app.module.ts** y quedará así:
+
+{% tabs %}
+{% tab title="app.module.ts" %}
+```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+
+import { AppComponent } from './app.component';
+import { MenuComponent } from './menu/menu.component';
+
+import { RoutingModule } from './routing/routing.module';
+
+@NgModule({
+  imports:      [ BrowserModule, FormsModule, RoutingModule ],
+  declarations: [ AppComponent, MenuComponent ],
+  bootstrap:    [ AppComponent ]
+})
+export class AppModule { }
+
+```
+{% endtab %}
+{% endtabs %}
+
+* Nos falta incluir estas rutas que creamos de nuestros componentes en el menú que incluimos y usar la etiqueta &lt;router-outlet&gt; que nos ayudará a mostrar el contenido de nuestros componentes
+
+En nuestro **app.component.html** vamos a incluir nuestra etiqueta &lt;router-outlet&gt; &lt;/router-outlet&gt;, dentro de estas etiquetas se va a mostrar todo el contenido de nuestros componentes.
+
+{% tabs %}
+{% tab title="app.component.html" %}
+```markup
+<header class="header">
+  <h1>My App 😉</h1>
+</header>
+<app-menu></app-menu>
+<router-outlet></router-outlet>
+```
+{% endtab %}
+{% endtabs %}
+
+Solo falta incluir en nuestros links la ruta de nuestros componentes y para ello vamos a hacer uso de unos atributos que tiene el enrutamiento o Routing, llamados **routerLinkActive** y **routerLink**. En cada uno de nuestros links incluiremos que nuestro link esta activo y le pondremos en el routerLink el path que asignamos en el RouterModule. En el archivo **menu.component.html** añadiremos lo mencionado.
+
+{% tabs %}
+{% tab title="menu.component.html" %}
+```markup
+<nav>
+  <ul>
+    <li><a routerLinkActive="active" 
+      routerLink="/home">Home</a></li>
+    <li><a routerLinkActive="active" 
+      routerLink="/topmovies">Top Movies</a></li>
+  </ul>
+</nav>
+```
+{% endtab %}
+{% endtabs %}
+
+Si damos clic en cada uno de los links podremos ver el contenido de cada componente.
+
+Como puedes notar no hay mucho contenido en nuestros componentes, entonces podemos incluir alguno de contenido en ellos. 
+
+## Paso 5: Crearemos un servicio 💆
 
 Crearemos un 'servicio' dando clic sobre la carpeta 'app', seleccionamos 'service', nombramos el servicio como: '**movies**', damos enter y se nos creará un archivo llamado: **movies.service.ts**
 
