@@ -88,7 +88,7 @@ interface Perro extends Gato {
 
 ## Type
 
-Un type nos permite definir el tipo de dato que vamos a usar en nuestras propiedades y métodos; pero a diferencia de als interfaces no podemos extender un type, ni ampliar sus capacidades. Pero si podemos declarar tipos personalizados y puede tener varios tipos de datos.
+Un type nos permite definir el tipo de dato que vamos a usar en nuestras propiedades y métodos; pero a diferencia de las interfaces no podemos extender un type, ni ampliar sus capacidades. Pero si podemos declarar tipos personalizados y puede tener varios tipos de datos.
 
 Se declara usando la palabra reservada _**type**_, seguido del nombre del type iniciando con mayuscula inicial la primera letra, y entre llaves colocaremos las propiedades y métodos, con su respectivo tipo.
 

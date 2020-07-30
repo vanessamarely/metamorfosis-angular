@@ -16,8 +16,6 @@ Basada en la experiencia que adquirí organizando eventos en comunidades y Works
 
 Usando este material puedes convertirte en un ment@r 💪. Puedes enseñarle a alguien como usar este material y como puede iniciar este proceso de transformación 👊.
 
-
-
 ## Temas 🤩
 
 En este nivel 2 Mariposa, te preguntarás ¿qué temas encontraré?, tengo expriencia en programación, tengo bases en la Web y quiero aprender Angular.
@@ -28,7 +26,6 @@ En este nivel 2 Mariposa, te preguntarás ¿qué temas encontraré?, tengo expri
 * ¿Que es Angular?
 * Conceptos básicos en Angular
 * Hagamos App en Angular
-* Retos en Angular
 
 ## . Recuerda 👀
 
