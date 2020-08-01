@@ -220,7 +220,7 @@ export class MoviesService {
 
 Incluimos el '**HttpClientModule**' en el archivo **app.module.ts**
 
-{% code title="add.module.ts" %}
+{% code title="app.module.ts" %}
 ```typescript
 import { HttpClientModule } from '@angular/common/http';
 ```
@@ -241,7 +241,7 @@ export class AppModule { }
 ```
 {% endcode %}
 
-Importamos unas dependencias en nuestro nuevo archivo llamado **movies.service.ts**,  y añadimos en el constructor lo siguiente: **http: HttpClient** , haciendo uso de la inyección de dependencias \(Patron de diseño\). Este http, va a ser uso de lo que tenga el HttpClient, que este hace parte del nuevo modulo que incluimos en el app.module.ts
+Importamos unas dependencias en nuestro nuevo archivo llamado **movies.service.ts**,  y añadimos en el constructor lo siguiente: **http: HttpClient** , haciendo uso de la inyección de dependencias \(Patron de diseño\). Este **http**, va a ser uso de lo que tenga el **HttpClient**, que este hace parte del nuevo modulo que incluimos en el **app.module.ts**
 
 {% code title="movies.service.ts" %}
 ```typescript
@@ -260,7 +260,7 @@ export class MoviesService {
 
 En nuestro archivo **movies.service.ts** crearemos una función para obtener la data del API, la llamaremos **getApi**. Crearemos una constante donde incluiremos la url de la API. Adicional a nuestra función le incluiremos un parametro de entrada que será el nombre de usuario del dueño del repositorio.
 
-En nuestra función incluimos un return que hace uso del parametro private del constructor que llama al get propio del http, que hace uso de las funciones del HttpClient, lo que hace este método, es que nos crea un Observable que va a contener la data que se recibe del api. En nuestro caso estamos usando la data del api, entonces en la función getApi, vamos a retornar ese observable que contiene la data que recibimos de la api.
+En nuestra función incluimos un **return** que hace uso del parametro private del constructor que llama al get propio del http, que hace uso de las funciones del **HttpClient**, lo que hace este método, es que nos crea un Observable que va a contener la data que se recibe del api. En nuestro caso estamos usando la data del api, entonces en la función getApi, vamos a retornar ese observable que contiene la data que recibimos de la api.
 
 {% code title="movies.service.ts" %}
 ```typescript
