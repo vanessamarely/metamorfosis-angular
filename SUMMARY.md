@@ -39,4 +39,5 @@
 * [🅰️ ¿Qué es Angular? 🅰️](nivel-2-mariposa/que-es-angular.md)
 * [✨ Conceptos de Angular ✨](nivel-2-mariposa/conceptos-de-angular.md)
 * [⌛Hagamos una app en Angular⌛](nivel-2-mariposa/hagamos-una-app-en-angular.md)
+* [👩🏻‍🎓 Reto en Angular 👩🏻‍🎓](nivel-2-mariposa/reto-en-angular.md)
 
