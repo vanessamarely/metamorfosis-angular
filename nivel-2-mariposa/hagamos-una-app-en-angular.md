@@ -110,7 +110,7 @@ import { TopmoviesComponent } from '../topmovies/topmovies.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'topmovies', component: TopMoviesComponent },
+  { path: 'topmovies', component: TopmoviesComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 
