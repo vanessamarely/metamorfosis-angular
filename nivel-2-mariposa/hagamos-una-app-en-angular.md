@@ -344,6 +344,8 @@ export class TopmoviesComponent implements OnInit {
 
 Ahora podemos probar el llamado de nuestra nueva función **getMoviesList\(\)**, llamando a nuestra función en el método **ngOnInit\(\)**.  Ademas la respuesta de la subscripción se asignará en la variable **list**.
 
+La data que vamos a recibir es un json con la propiedad movies inicialmente, a nuestro list vamos a especificarle que queremos en el response recibir la data a partir de la propiedad movies, como muestro a continuacion, dentro del metodo getMoviesList\(\)
+
 {% code title="topmovies.component.ts" %}
 ```typescript
 import { Component, OnInit } from '@angular/core';
@@ -368,7 +370,7 @@ export class TopmoviesComponent implements OnInit {
   getMoviesList(): void {
     this.moviesService.getApi()
       .subscribe(
-        response => (this.list = response),
+        response => (this.list = response['movies']),
         error => (console.log('Ups! we have an error: ', error))
       );
   }
