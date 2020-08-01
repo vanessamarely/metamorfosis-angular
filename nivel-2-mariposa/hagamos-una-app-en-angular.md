@@ -69,7 +69,11 @@ Nuestra lista se verá parecida al siguiente código, pero en la vista o **HTML*
 
 En el archivo **menu.component.ts** existe una línea donde encuentras el '**selector**' y ese es el que se debe añadir en el **app.component.html**
 
-Copia el selector y añádelo como etiqueta en la vista del componente App.
+Copia el selector y añádelo como etiqueta en la vista del componente App, en el archivo app.component.html.
+
+```markup
+<app-menu></app-menu>
+```
 
 ## Paso 4: Uniendo los componentes a sus links 🕹️
 
@@ -89,7 +93,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 ```typescript
 import { HomeComponent } from '../home/home.component';
-import { TopMoviesComponent } from '../topmovies/topmovies.component';
+import { TopmoviesComponent } from '../topmovies/topmovies.component';
 ```
 
 También podemos crear una constante donde almacenemos la colección de nuestras rutas, la llamaremos "**routes**".
@@ -102,7 +106,7 @@ Ademas en los imports icluiremos cada una de las rutas haciendo uso de forRoute\
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from '../home/home.component';
-import { TopMoviesComponent } from '../topmovies/topmovies.component';
+import { TopmoviesComponent } from '../topmovies/topmovies.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
