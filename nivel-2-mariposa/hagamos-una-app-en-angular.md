@@ -404,6 +404,7 @@ Para mostrar la data podemos hacer uso de la interpolación para mostrar cada pr
 
 ```markup
 <h1>{{ movie.title }}</h1>
+<img [src]="movie.image"  [title]="movie.title" />
 ```
 
 En el siguiente link se puede ver el ejemplo de la aplicación de la interpolación para las otras propiedades y el ejemplo de aplicación del pipe para la fecha.
