@@ -13,7 +13,7 @@ description: >-
 
 TypeScript es un lenguaje de programación, es un super JavaScript con super poderes, tipado. Creado para hacer código JavaScript mucho más escalable.
 
-Se dice que typeScript es un superset, porque es un lenguaje escrito encima de otro lenguaje, que compila a otro lenguaje. En el caso de TypeScript es un lenguaje que compila a JavaScript, pero que incluye muchas facilidades y ventajas.
+Se dice que TypeScript es un superset, porque es un lenguaje escrito encima de otro lenguaje, que compila a otro lenguaje. En el caso de TypeScript es un lenguaje que compila a JavaScript, pero que incluye muchas facilidades y ventajas.
 
 Microsoft es el creador de TypeScript. y es un lenguaje que se mantiene a la vanguardia con las mejoras de JavaScript.
 

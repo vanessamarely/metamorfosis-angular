@@ -93,7 +93,7 @@ Se dividen en tres tipos diferentes:
 
 Para ampliar un poco más la información de Directivas y como usarla, puedes leer este artículo: [Directivas](https://medium.com/@vanessamarely/directivas-en-angular-efb8a8cf78e0)
 
-## Data Binding
+## 🗃️Data Binding🗃️
 
 Se le llama Data Binding o enlace de Datos, a la técnica que nos sirve de puente de comunicación entre una vista HTML y una fuente de datos, nuestro modelo; y los sincroniza, permitiendonos una actualización casi que en tiempo real de nuestra data a nuestra vista.
 
@@ -102,7 +102,7 @@ Tipos Binding de datos
 * One Way \(una sola vía\) . Los cambios solo se reflejan en la vista o modelo, pero no hay sincronia entre ambos frente a una actualización de la data.
 * Two Way \(dos vias\). Se usa generalmente en los formularios, ya que se desea que el usuario ingrese la información, esta se actualice correctamente.
 
-## Router
+## 📬Router📬
 
 El enrutamiento o Router es la navegación entre las diferentes páginas. Nos permite crear SPAs.
 
@@ -137,7 +137,7 @@ Una SPA es una aplicación Web donde todas las pantallas con las que vaya a inte
 Antiguamente cuando se iniciaron a crear páginas Web, el contenido de ellas era estatico y teniamos que crear un documento por página y algunos elementos no se reutilizaban; hablando de un header o un menu. Cuando se empezaron a crear las páginas dinamicas, que el contenido venia desde una petición a una base de datos, se empezaron a crear páginas más robustas que terminarón en aplicaciones Web; y para reutilizar componentes y evitar crear multiples documentos HTML, conceptos como las SPA fueron introducidos para facilitarnos el trabajo.  
 
 
-## Formularios
+## 📝Formularios📝
 
 Un formulario nos permite recolectar datos, sea información personal del usuario, comentarios, sugerencias, autenticarnos a una página, entre otros usos.
 
@@ -157,7 +157,7 @@ Los formularios reactivos tienen la particularidad que la manipulación de los d
 
 Los formularios dinámicos, usan un patron usando una meta descripción para construirlos. Usan la API de los formularios reactivos en su construcción. 
 
-## Servicios
+## 📚Servicios📚
 
 Un servicio nos permite compartir funcionalidades y la data que solicitamos al servidor, para poderla compartir sin problema entre componentes.
 
@@ -182,7 +182,7 @@ export class HeroService {
 }
 ```
 
-## Pipe
+## 🗂️Pipe🗂️
 
 Los pipes nos permiten dar formato a algunos datos, como por ejemplo la fecha.
 
