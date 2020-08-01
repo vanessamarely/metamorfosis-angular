@@ -410,3 +410,66 @@ En el siguiente link se puede ver el ejemplo de la aplicación de la interpolaci
 
 Para que se vea mejor, te invito a aplicar algunos estilos css, para dar una mejor apariencia a nuestra mini aplicación 😉
 
+## Crea tu  App usando el angular-cli
+
+Para crear esta misma aplicación localmente debes tener instalado node.js y un IDE \(Visual Studio Code es una buena opcion\). Una vez lo instales debemos en tu terminal preferida, instalar Angular usando el siguiente comando:
+
+```bash
+npm install -g @angular/cli
+```
+
+Para verificar que tienes instalado node.js antes del anterior comando, solo colocas en la terminar
+
+```bash
+node -v
+npm -v
+```
+
+* Vamos a crear el workspace o ambiente de trabajo. Cuando haya terminado de instalar el angular/cli, debes ejecutar el siguiente comando:
+
+```bash
+ng new my-app
+```
+
+Con ese comando indicamos que queremos crear una nueva aplicación. Cuando estes instalando te va a preguntar si deseas añadir el routing, le escribes  "Y" \(seria yes\), te mostrá algo similar a esto:  'Would you like to add Angular Routing?'. Eso es lo unico que necesitamos decirle Y.  
+Cuando te pregunte por el stylescheet selecciona CSS.
+
+Para ejecutar nuestra aplicación debemos ir a la carpeta que se genero, ejecutamos lo siguiente en la terminal:
+
+```text
+cd my-app
+ng serve --open
+```
+
+![](../.gitbook/assets/image%20%282%29.png)
+
+Una vez ejecutado nuestro proyecto, podremos ver el hola por defecto de Angular, similar al de stackblitz.
+
+El archivo de routing es para crear una SPA, para darle más complejidad a nuestra App y te puedes basar en el nivel 0 para hacerlo.
+
+Angular tiene algo que se llama schematics, que te permite ejecutar pequeñas instrucciones para generar los archivos y añadir las rutas respectivas donde se necesitan. Para crear los componentes, lo haremos así:
+
+```text
+ng generate component <nameComponent>
+```
+
+Se puede usar la forma abreviada:
+
+```text
+ng g c <nameComponent>
+```
+
+Para crear un servicio, lo haremos así:
+
+```text
+ng generate service <nameService>
+```
+
+Se puede usar la forma abreviada:
+
+```text
+ng g s <nameService>
+```
+
+Puedes basarte en el ejercicio que hiciste en Stackblitz para hacer este y una vez lo termines, subes a Github tu ejercicio.
+
