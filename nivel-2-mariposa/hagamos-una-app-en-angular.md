@@ -36,9 +36,9 @@ Dando clic derecho sobre la carpeta App, se desplegará un menú, en el seleccio
 
 Nos aparece un campo de texto donde colocaremos el nombre para nuestro componente.
 
-Le colocaremos el nombre home y presionamos enter y se nos creará nuestro nuevo componente.
+Le colocaremos el nombre **home** y presionamos enter y se nos creará nuestro nuevo componente.
 
-Repetiremos el mismo paso para la creación del componente para crear otro componente más, lo llamaremos topmovies.
+Repetiremos el mismo paso para la creación del componente para crear otro componente más, lo llamaremos **topmovies**.
 
 ## Paso 3: Añadiendo un Menu 📋
 
@@ -48,7 +48,7 @@ Dando clic derecho sobre la carpeta App, se desplegará un menú, en el seleccio
 
 Nos aparece un campo de texto donde colocaremos el nombre para nuestro componente.
 
-Le colocaremos el nombre "menu" y presionamos enter y se nos creará nuestro nuevo componente.
+Le colocaremos el nombre "**menu**" y presionamos enter y se nos creará nuestro nuevo componente.
 
 En el archivo **menu.component.html** vamos a poner la etiqueta &lt;nav&gt; donde pondremos cada uno de los links que nos llevarán a cada componente. Esos links los pondremos en una lista.
 
@@ -69,7 +69,7 @@ Nuestra lista se verá parecida al siguiente código, pero en la vista o **HTML*
 
 En el archivo **menu.component.ts** existe una línea donde encuentras el '**selector**' y ese es el que se debe añadir en el **app.component.html**
 
-Copia el selector y añádelo como etiqueta en la vista del componente App, en el archivo app.component.html.
+Copia el selector y añádelo como etiqueta en la vista del componente App, en el archivo **app.component.html**.
 
 ```markup
 <app-menu></app-menu>
@@ -79,7 +79,7 @@ Copia el selector y añádelo como etiqueta en la vista del componente App, en e
 
 Vamos a crear un módulo router, para controlar todas nuestras rutas.
 
-En la carpeta **app**, vamos a dar clic derecho y en la opción Angular Generator, seleccionaremos Module y lo llamaremos routing.
+En la carpeta **app**, vamos a dar clic derecho y en la opción Angular Generator, seleccionaremos Module y lo llamaremos **routing**.
 
 En nuestro nuevo archivo vamos a incluir las rutas y para ello debemos importar Routes y el RouterModule e incluir en los import la colección de nuestras rutas.
 
@@ -104,6 +104,7 @@ Ademas en los imports icluiremos cada una de las rutas haciendo uso de forRoute\
 {% tab title="routing.module.ts" %}
 ```typescript
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from '../home/home.component';
 import { TopmoviesComponent } from '../topmovies/topmovies.component';
@@ -115,7 +116,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [CommonModule, RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class RoutingModule { }
@@ -164,9 +165,9 @@ export class AppModule { }
 {% endtab %}
 {% endtabs %}
 
-* Nos falta incluir estas rutas que creamos de nuestros componentes en el menú que incluimos y usar la etiqueta &lt;router-outlet&gt; que nos ayudará a mostrar el contenido de nuestros componentes
+* Nos falta incluir estas rutas que creamos de nuestros componentes en el menú que incluimos y usar la etiqueta **&lt;router-outlet&gt;** que nos ayudará a mostrar el contenido de nuestros componentes
 
-En nuestro **app.component.html** vamos a incluir nuestra etiqueta &lt;router-outlet&gt; &lt;/router-outlet&gt;, dentro de estas etiquetas se va a mostrar todo el contenido de nuestros componentes.
+En nuestro **app.component.html** vamos a incluir nuestra etiqueta **&lt;router-outlet&gt; &lt;/router-outlet&gt;**, dentro de estas etiquetas se va a mostrar todo el contenido de nuestros componentes.
 
 {% tabs %}
 {% tab title="app.component.html" %}
@@ -199,7 +200,35 @@ Solo falta incluir en nuestros links la ruta de nuestros componentes y para ello
 
 Si damos clic en cada uno de los links podremos ver el contenido de cada componente.
 
-Como puedes notar no hay mucho contenido en nuestros componentes, entonces podemos incluir alguno de contenido en ellos. 
+Como puedes notar no hay mucho contenido en nuestros componentes, entonces podemos incluir alguno de contenido en ellos.
+
+### Nota :
+
+De estar creando tu aplicación de Angular localmente en tu maquina, al hacer la creación de tu proyecto, como menciono en el último item de esta guia "**Crea tu App usando angular-cli**" \(despues del paso 6\), nuestro cliente de Angular nos genera este archivo, entonces verifica que tengas el mismo contenido en ambos archivos. Es importante que al crear un nuevo modulo para evitar errores en los componentes, en la vista incluyas en tu nuevo module, \(routing.module.ts\) el modulo Common. Usando la siguiente linea:
+
+{% code title="app-routing.module.ts" %}
+```typescript
+import { CommonModule } from '@angular/common';
+```
+{% endcode %}
+
+Ademas de incluirlo en los imports:
+
+{% code title="app-routing.module.ts" %}
+```typescript
+@NgModule({
+  imports: [
+    CommonModule,
+    RouterModule.forRoot(routes)
+  ],
+  declarations: [ HomeComponent, TopmoviesComponent],
+  exports: [RouterModule]
+})
+export class RoutingModule { }
+```
+{% endcode %}
+
+En stackblitz se incluye este import automaticamente; pero en tu proyecto local, al crear tu archivo de routing al crear tu primera app de angular haciendo uso del comando: "**ng new my-app**", no se realiza este import \(no se importa el Common\), es importante que tu lo incluyas, para evitarte problemas en el html con las directivas y pipes.
 
 ## Paso 5: Crearemos un servicio 💆
 
@@ -241,7 +270,9 @@ export class AppModule { }
 ```
 {% endcode %}
 
-Importamos unas dependencias en nuestro nuevo archivo llamado **movies.service.ts**,  y añadimos en el constructor lo siguiente: **http: HttpClient** , haciendo uso de la inyección de dependencias \(Patron de diseño\). Este **http**, va a ser uso de lo que tenga el **HttpClient**, que este hace parte del nuevo modulo que incluimos en el **app.module.ts**
+Importamos unas dependencias en nuestro nuevo archivo llamado **movies.service.ts**,  y añadimos en el constructor lo siguiente: **http: HttpClient** , haciendo uso de la inyección de dependencias \(Patron de diseño\). 
+
+Este **http**, va a ser uso de lo que tenga el **HttpClient**, que este hace parte del nuevo modulo que incluimos en el **app.module.ts**
 
 {% code title="movies.service.ts" %}
 ```typescript
@@ -260,7 +291,9 @@ export class MoviesService {
 
 En nuestro archivo **movies.service.ts** crearemos una función para obtener la data del API, la llamaremos **getApi**. Crearemos una constante donde incluiremos la url de la API. Adicional a nuestra función le incluiremos un parametro de entrada que será el nombre de usuario del dueño del repositorio.
 
-En nuestra función incluimos un **return** que hace uso del parametro private del constructor que llama al get propio del http, que hace uso de las funciones del **HttpClient**, lo que hace este método, es que nos crea un Observable que va a contener la data que se recibe del api. En nuestro caso estamos usando la data del api, entonces en la función getApi, vamos a retornar ese observable que contiene la data que recibimos de la api.
+En nuestra función incluimos un **return** que hace uso del parametro private del **constructor** que llama al **get** propio del **http**, que hace uso de las funciones del **HttpClient**, lo que hace este método, es que nos crea un Observable que va a contener la data que se recibe del api. 
+
+En nuestro caso estamos usando la data del api, entonces en la función **getApi**, vamos a retornar ese observable que contiene la data que recibimos de la api.
 
 {% code title="movies.service.ts" %}
 ```typescript
@@ -310,9 +343,15 @@ export class TopmoviesComponent implements OnInit {
 ```
 {% endcode %}
 
-Crearemos una función llamada **getMoviesList\(\)**, y vamos a  crear una constante donde almacenaremos la información y la llamaremos **list**.
+Crearemos una función llamada **getMoviesList\(\)**, y vamos a  crear una constante donde almacenaremos la información y la llamaremos **list**, no le podnremos algun tipo de dato.
 
 En el servicio **moviesService**, como vieron anteriormente, retornamos una función, que trae la respuesta de nuestra API. En esa función hacemos uso del  [HttpClient](https://angular.io/api/common/http/HttpClient), que es un observable, entonces en nuestro componente para obtener la data necesitamos subscribirnos. 
+
+Entonces dentro de nuestra función **getMoviesList\(\)**, vamos a llamar a nuestra variable que creamos de tipo privada en nuestro constructor: this.moviesService, y hacemos uso del método **get\(\)**, y nos subscribimos haciendo uso de la palabra subscribe. 
+
+Cuando nos subscribimos, tenemos la opción de mostrar la respuesta que obtenemos \(de ser exitosa la respuesta\) o incluso manejar una pequeña excepción de optener un error en la subscripción.
+
+Vamos a hacer dos console.log\(\) para la respuesta exitosa y en caso de obtener un error, como en el siguiente código.
 
 {% code title="topmovies.component.ts" %}
 ```typescript
@@ -342,9 +381,9 @@ export class TopmoviesComponent implements OnInit {
 ```
 {% endcode %}
 
-Ahora podemos probar el llamado de nuestra nueva función **getMoviesList\(\)**, llamando a nuestra función en el método **ngOnInit\(\)**.  Ademas la respuesta de la subscripción se asignará en la variable **list**.
+Ahora podemos probar el llamado de nuestra nueva función **getMoviesList\(\)**, llamando a nuestra función en el método **ngOnInit\(\)** \(este método hace parte del ciclo de vida de los componentes de Angular\).  Ademas la respuesta de la subscripción se asignará en la variable **list**.
 
-La data que vamos a recibir es un json con la propiedad movies inicialmente, a nuestro list vamos a especificarle que queremos en el response recibir la data a partir de la propiedad movies, como muestro a continuacion, dentro del metodo getMoviesList\(\)
+La data que vamos a recibir es un **json** con la propiedad **movies** inicialmente, a nuestro **list** vamos a especificarle que queremos en el response recibir la data a partir de la propiedad 'movies', como muestro a continuación, dentro del método **getMoviesList\(\).**
 
 {% code title="topmovies.component.ts" %}
 ```typescript
@@ -384,7 +423,7 @@ Vamos a añadir un título y vamos a incluir una sección donde mostraremos la d
 
 Para mostrar la data, a parte de hacer uso de la interpolación, vamos a usar algunas directivas y  pipes. 
 
-Dentro de una etiqueta &lt;section&gt;&lt;/section&gt;, vamos a incluir una directiva **\*ngIf**, que nos permite mostrar la data  si tiene algún contenido.
+Dentro de una etiqueta &lt;section&gt;&lt;/section&gt;, vamos a incluir una directiva **\*ngIf**, que nos permite mostrar la data  si tiene algún contenido. ****Podríamos crear otra sección usando &lt;div&gt; o &lt;section&gt; en el caso de que no haya data muestre algún mensaje.
 
 Ademas para recorrer la data que retornamos del servicio, vamos a usar la directiva **\*ngFor**. 
 
@@ -406,6 +445,8 @@ Para mostrar la data podemos hacer uso de la interpolación para mostrar cada pr
 <h1>{{ movie.title }}</h1>
 <img [src]="movie.image"  [title]="movie.title" />
 ```
+
+Para el caso de la imagen usamos el binding, para mostrar esa data dinámica en los atributos \[image\] y \[title\], se deben encerrar entre corchetes \[\], para poder mostrar la data correspondiente.
 
 En el siguiente link se puede ver el ejemplo de la aplicación de la interpolación para las otras propiedades y el ejemplo de aplicación del pipe para la fecha.
 
@@ -475,4 +516,6 @@ ng g s <nameService>
 ```
 
 Puedes basarte en el ejercicio que hiciste en Stackblitz para hacer este y una vez lo termines, subes a Github tu ejercicio.
+
+Te recomiendo tener en cuenta la nota que coloque en el paso 4, cuando estes creando tus rutas en tu proyecto localmente.
 
