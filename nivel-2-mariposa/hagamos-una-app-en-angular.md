@@ -282,5 +282,131 @@ export class MoviesService {
 ```
 {% endcode %}
 
+## Paso 6: Llamemos a nuestro servicio  🍭
 
+En nuestro archivo **topmovies.component.ts**, crearemos una función,  donde  nos vamos a subscribir al observable, que retorna la función **getApi**, que retorna  la petición que hacemos de los datos.
+
+También importaremos en nuestro **topmovies.component.ts** el servicio que creamos, **MoviesService,** y crearemos una función **constructor** donde declararemos una función privada del servicio. ****
+
+{% code title="topmovies.component.ts" %}
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { MoviesService } from '../movies.service';
+
+@Component({
+  selector: 'app-topmovies',
+  templateUrl: './topmovies.component.html',
+  styleUrls: ['./topmovies.component.css']
+})
+export class TopmoviesComponent implements OnInit {
+  
+  constructor(
+    private moviesService: MoviesService
+  ){}
+
+  getMoviesList(): void {  
+  }
+}
+```
+{% endcode %}
+
+Crearemos una función llamada **getMoviesList\(\)**, y vamos a  crear una constante donde almacenaremos la información y la llamaremos **list**.
+
+En el servicio **moviesService**, como vieron anteriormente, retornamos una función, que trae la respuesta de nuestra API. En esa función hacemos uso del  [HttpClient](https://angular.io/api/common/http/HttpClient), que es un observable, entonces en nuestro componente para obtener la data necesitamos subscribirnos. 
+
+{% code title="topmovies.component.ts" %}
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { MoviesService } from '../movies.service';
+
+@Component({
+  selector: 'app-topmovies',
+  templateUrl: './topmovies.component.html',
+  styleUrls: ['./topmovies.component.css']
+})
+export class TopmoviesComponent implements OnInit {
+  list;
+  
+  constructor(
+    private moviesService: MoviesService
+  ){}
+
+  getMoviesList(): void {
+    this.moviesService.getApi()
+      .subscribe(
+        response => (console.log(response)),
+        error => (console.log('Ups! we have an error: ', error))
+      );
+  }
+}
+```
+{% endcode %}
+
+Ahora podemos probar el llamado de nuestra nueva función **getMoviesList\(\)**, llamando a nuestra función en el método **ngOnInit\(\)**.  Ademas la respuesta de la subscripción se asignará en la variable **list**.
+
+{% code title="topmovies.component.ts" %}
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { MoviesService } from '../movies.service';
+
+@Component({
+  selector: 'app-topmovies',
+  templateUrl: './topmovies.component.html',
+  styleUrls: ['./topmovies.component.css']
+})
+export class TopmoviesComponent implements OnInit {
+  list;
+  
+  constructor(
+    private moviesService: MoviesService
+  ){}
+  
+  ngOnInit() {
+    this.getMoviesList();
+  }
+
+  getMoviesList(): void {
+    this.moviesService.getApi()
+      .subscribe(
+        response => (this.list = response),
+        error => (console.log('Ups! we have an error: ', error))
+      );
+  }
+}
+```
+{% endcode %}
+
+Ahora vamos a mostrar la data usando la interpolación en el archivo **topmovies.component.html**.
+
+Vamos a añadir un título y vamos a incluir una sección donde mostraremos la data.
+
+Para mostrar la data, a parte de hacer uso de la interpolación, vamos a usar algunas directivas y  pipes. 
+
+Dentro de una etiqueta &lt;section&gt;&lt;/section&gt;, vamos a incluir una directiva **\*ngIf**, que nos permite mostrar la data  si tiene algún contenido.
+
+Ademas para recorrer la data que retornamos del servicio, vamos a usar la directiva **\*ngFor**. 
+
+```markup
+<header>
+  <h1>🎥Top Movies🎥</h1>
+</header>
+<section class="movies" *ngIf="list">
+  <div  class="movies__cards" *ngFor="let movie of list">
+    <div class="movies__cards__card">
+    </div>
+  </div>
+</section>
+```
+
+Para mostrar la data podemos hacer uso de la interpolación para mostrar cada propiedad  de nuestro objeto de la lista de peliculas. Por ejemplo:
+
+```markup
+<h1>{{ movie.title }}</h1>
+```
+
+En el siguiente link se puede ver el ejemplo de la aplicación de la interpolación para las otras propiedades y el ejemplo de aplicación del pipe para la fecha.
+
+{% embed url="https://stackblitz.com/edit/angular-ivy-mariposa-app?embed=1&file=src/app/topmovies/topmovies.component.html" %}
+
+Para que se vea mejor, te invito a aplicar algunos estilos css, para dar una mejor apariencia a nuestra mini aplicación 😉
 
