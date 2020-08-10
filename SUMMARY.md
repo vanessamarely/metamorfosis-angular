@@ -1,6 +1,7 @@
 # Table of contents
 
 * [🦋 Bienvenid@s a la Metamorfosis de Angular 🦋](README.md)
+* [Sobre mí 👩‍💻](sobre-mi.md)
 
 ## Nivel 0 - Oruga
 
