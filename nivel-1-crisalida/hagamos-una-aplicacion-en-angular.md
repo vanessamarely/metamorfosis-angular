@@ -377,7 +377,7 @@ Para crear esta misma aplicación localmente debes tener instalado node.js y un 
 npm install -g @angular/cli
 ```
 
-Para verificar que tienes instalado node.js antes del anterior comando, solo colocas en la terminar
+Para verificar que tienes instalado node.js antes del anterior comando, solo colocas en la terminal
 
 ```bash
 node -v
