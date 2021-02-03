@@ -17,6 +17,8 @@ Siguiendo la metodología, la idea es que a través de este Workshop inicies tus
 
 En este Workshop existen tres niveles: nivel 0 llamado Oruga 🐛, nivel 1 Crisalida 🐚 y nivel 2 Mariposa 🦋. Estos niveles no son de expertise en el framework, estaba basado en el conocimiento del programador con las tecnolgías Web y como se pretende que personas con 0 conocimientos en este campo tenga una primera aproximación a él.
 
+
+
 ## 🐛¿El porqué el nombre de la 'Metamorfosis'? 🐛
 
 Cuando se menciona la palabra 'Metamorfosis', hablamos de un cambio, una transformación que vamos a hacer o que la naturaleza hace. En nuestro caso la idea es transformar esos conocimientos que se tienen nulos en una herramienta, pueda ser un proceso gradual, que al culminar ese proceso ustedes tengan una base para poder continuar por su cuenta su proceso de aprendizaje.
