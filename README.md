@@ -31,7 +31,7 @@ La idea de esta guia es darte un material extra al que encuentras en internet pa
 
 Que encontrarás en esta guía:
 
-* Encontrarás algunas deficiones básicas de conceptos que usamos para construir páginas o aplicaciones Web.
+* Encontrarás algunas definiciones básicas de conceptos que usamos para construir páginas o aplicaciones Web.
 * Encontrarás líneas de código que estarán como se detalla en el siguiente bloque de código, podrás encontrar sea marcado HTML, estilos CSS, código en lenguaje JavaScript o TypeScript.
 
 {% code title="hello.ts" %}
