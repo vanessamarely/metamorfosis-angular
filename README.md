@@ -13,9 +13,9 @@ description: >-
 
 La Metamorfosis de Angular, no es una comunidad, la misión de este espacio es empoderar y brindar un lugar de aprendizaje. La filosofia que recomiendo es la de: 👉  "**Aprender Haciendo o** _**Learning by Doing**_".  
 
-Siguiendo la metodología, la idea es que a través de este Workshop inicies tus pasitos 🦶 en este gran Framework llamado Angular 👍.
+Siguiendo cada uno de los niveles aprenderás a crear una aplicación de Angular. Esta metodología ha sido seguida en un Workshop, pero no necesitas ingresar a alguna sesión, ver algún video o pertencer a una comunidad, para usar estos recursos; la idea es que a través de esta guía inicies tus pasitos 🦶 en este gran Framework llamado Angular 👍. Incluso si deseas crer tu propio Workshop o Taller, que desees compartir en tu comunidad, puedes tomar como base esta guía para hacerlo.
 
-En este Workshop existen tres niveles: nivel 0 llamado Oruga 🐛, nivel 1 Crisalida 🐚 y nivel 2 Mariposa 🦋. Estos niveles no son de expertise en el framework, estaba basado en el conocimiento del programador con las tecnolgías Web y como se pretende que personas con 0 conocimientos en este campo tenga una primera aproximación a él.
+Existen tres niveles: nivel 0 llamado Oruga 🐛, nivel 1 Crisalida 🐚 y nivel 2 Mariposa 🦋. Estos niveles no son de expertise en el framework, estaba basado en el conocimiento del programador con las tecnolgías Web y como se pretende que personas con 0 conocimientos en este campo tenga una primera aproximación a él.
 
 
 
