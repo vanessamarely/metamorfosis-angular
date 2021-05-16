@@ -8,7 +8,7 @@ description: >-
 
 ## 1. Introducción 💪
 
-![](../.gitbook/assets/ciclo-mariposa%20%282%29.png)
+![](../.gitbook/assets/ciclo-mariposa%20%282%29%20%282%29.png)
 
 Si llegaste hasta este punto  es porque deseas continuar ese proceso de transformación, abierto a aprender conceptos que es posible que en algún momento escuchaste algo o nada, pero espero que al finalizar este nivel, puedas sentirte con la satisfacción de haber profundizado 👍.
 

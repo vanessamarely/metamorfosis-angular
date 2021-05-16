@@ -8,7 +8,7 @@ description: >-
 
 ## 🧠Introducción a JavaScript🧠
 
-![](../.gitbook/assets/guin-o.png)
+![](../.gitbook/assets/guin-o%20%281%29.png)
 
 JavaScript es un lenguaje de programación, se dice de él que es multiparadigma y es débilmente tipado. Es multiplataforma, ya que se puede utilizar en Windows, Linux o Mac. Se puede usar en cualquier navegador. Se puede usar en ambientes de cara al usuario y del lado del servidor.
 

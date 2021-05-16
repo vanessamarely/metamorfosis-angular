@@ -24,7 +24,7 @@ Nos permite darle formato a nuestro contenido. Ponerlo bonito, que nuestro docum
 
 ## JavaScript
 
-![](../.gitbook/assets/guin-o%20%281%29.png)
+![](../.gitbook/assets/guin-o.png)
 
 Nos permite manejar las diferentes interacciones que nuestro usuario pueda tener con el contenido. Se pueden manejar diferentes eventos con él, incluso se puede editar el formato del documento.
 

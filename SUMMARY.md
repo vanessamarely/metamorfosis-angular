@@ -2,7 +2,6 @@
 
 * [🦋 Bienvenid@s a la Metamorfosis de Angular 🦋](README.md)
 * [Sobre mí 👩‍💻](sobre-mi.md)
-* [Contribuir](contribuir.md)
 
 ## Nivel 0 - Oruga
 

@@ -485,7 +485,7 @@ cd my-app
 ng serve --open
 ```
 
-![](../.gitbook/assets/image%20%282%29.png)
+![](../.gitbook/assets/image%20%283%29%20%281%29.png)
 
 Una vez ejecutado nuestro proyecto, podremos ver el hola por defecto de Angular, similar al de stackblitz.
 
