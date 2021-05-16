@@ -6,6 +6,7 @@
 ## Nivel 0 - Oruga
 
 * [🐛 Bienvenid@s 🐛](nivel-0-oruga/bienvenid-s.md)
+* [Contribuir](nivel-0-oruga/contribuir.md)
 * [👩‍💻 Introducción a la programación 👩‍💻](nivel-0-oruga/introduccion-a-la-programacion.md)
 * [⚙️ Herramientas ⚙️](nivel-0-oruga/herramientas.md)
 * [🕸️ Introducción a la Web🕸️](nivel-0-oruga/introduccion-a-la-web.md)
