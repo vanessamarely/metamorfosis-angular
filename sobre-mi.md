@@ -1,5 +1,5 @@
 ---
-description: "Me da gusto que estes interesado en conocer mi Gitbook \U0001F44D"
+description: "Me da gusto que estes interesado en conocer de este proyecto \U0001F44D"
 ---
 
 # Sobre mí 👩‍💻
@@ -10,7 +10,7 @@ Mi nombre es [Vanessa Marely Aristizabal Angel](https://twitter.com/vanessamarel
 
 Soy apasionada por la tecnología y me gusta ayudar y contribuir a la comunidad.
 
-Espero este **Gitbook** sea de ayuda en tu proceso de formación 😀😀😀
+Este proyecto fue construido inicialmente en [**Gitbook**](https://ngchallenges.gitbook.io/metamorfosis-de-angular/) y espero sea de ayuda en tu proceso de formación 😀😀😀
 
 Ademas te invito a conocer mi otro Gitbook:
 
