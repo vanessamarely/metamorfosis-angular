@@ -12,7 +12,7 @@ description: >-
 
 Si llegaste hasta este punto  es porque deseas continuar ese proceso de transformación, abierto a aprender conceptos que es posible que en algún momento escuchaste algo, pero espero que al finalizar este nivel, puedas sentirte con la satisfacción de haber profundizado 👍.
 
-Basada en la experiencia que adquirí organizando eventos en comunidades y Workshops, intente elaborar el contenido de este Workshop, presentandote una propuesta diferente a las que sueles encontrar \(espero haber logrado ese objetivo 😅\).
+Basada en la experiencia que adquirí organizando eventos en comunidades y Workshops, intente elaborar el contenido de este mayerial, presentandote una propuesta diferente a las que sueles encontrar \(espero haber logrado ese objetivo 😅\).
 
 Usando este material puedes convertirte en un ment@r 💪. Puedes enseñarle a alguien como usar este material y como puede iniciar este proceso de transformación 👊.
 
