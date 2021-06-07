@@ -12,7 +12,7 @@ description: >-
 
 Si estas leyendo este contenido es porque deseas iniciar ese proceso de transformación, abiert@ a aprender una cantidad de conceptos que es posible que no dominas, o que en algún momento escuchaste algo, pero espero que al finalizar este nivel, puedas sentirte con la satisfacción de haber profundizado o conocido 👍.
 
-Basada en la experiencia que adquirí organizando eventos en comunidades y Workshops, intente elaborar el contenido de este Workshop, presentandote una propuesta diferente a las que sueles encontrar \(espero haber logrado ese objetivo 😅 \).
+Basada en la experiencia que adquirí organizando eventos en comunidades y Workshops, intente elaborar el contenido de este material, presentandote una propuesta diferente a las que sueles encontrar \(espero haber logrado ese objetivo 😅 \).
 
 Usando este material puedes convertirte en un ment@r 💪. Puedes enseñarle a alguien como usar este material y como puede iniciar este proceso de transformación 👊.
 
