@@ -4,7 +4,7 @@ description: "Me da gusto que estes interesado en conocer de este proyecto \U000
 
 # Sobre mí 👩‍💻
 
-Mi nombre es [Vanessa Marely Aristizabal Angel](https://twitter.com/vanessamarely), soy Frontend Developer, soy GDE en Angular & Web Technologies.
+Mi nombre es [Vanessa Marely Aristizabal Angel](https://twitter.com/vanessamarely), soy Frontend Developer, soy GDE en Angular & Web Technologies y soy la moderadora de este proyecto.
 
 ![](.gitbook/assets/fotogde.png)
 
