@@ -14,7 +14,7 @@ La metadata de los servicios proveen información, que puede ser compartida en l
 
 Una aplicación de componente, define muchas vistas que estan organizados jerarquicamente.
 
-**Angular** posee un servicio de Enrutamiento o **Router**, que nos permite crear una **SPA** \(**Single Page Aplication**\), que nos ayuda a manejar la navegación de nuestra aplicación entre las vistas. 
+**Angular** posee un servicio de Enrutamiento o **Router**, que nos permite crear una **SPA** (**Single Page Aplication**), que nos ayuda a manejar la navegación de nuestra aplicación entre las vistas.&#x20;
 
 
 
@@ -36,19 +36,19 @@ export class AppModule {}
 
 ## 📦 Componente 📦
 
-Los componentes de Angular son donde vamos a estructurar nuestra aplicación. Cuando construimos una aplicación analizamos cual va a ser le contenedor de la página, y que elementos internamente vamos a separar el componentes que nos van a ayudar con la lógica de negocio de la página o solo a mostrar un componente visual \(sea solo un boton, o un menu, un header, etc.\)
+Los componentes de Angular son donde vamos a estructurar nuestra aplicación. Cuando construimos una aplicación analizamos cual va a ser le contenedor de la página, y que elementos internamente vamos a separar el componentes que nos van a ayudar con la lógica de negocio de la página o solo a mostrar un componente visual (sea solo un boton, o un menu, un header, etc.)
 
 
 
-![](https://gblobscdn.gitbook.com/assets%2F-LbFy569GFu09bPpzMDJ%2F-LohnhqdNnTTn0E2cbaM%2F-LohnuU0Lxpfjv8oRCmr%2Faplicaicon.png?alt=media&token=9c03512f-810e-46c6-9d1e-7ea96c1a12b6)
+![](https://gblobscdn.gitbook.com/assets%2F-LbFy569GFu09bPpzMDJ%2F-LohnhqdNnTTn0E2cbaM%2F-LohnuU0Lxpfjv8oRCmr%2Faplicaicon.png?alt=media\&token=9c03512f-810e-46c6-9d1e-7ea96c1a12b6)
 
 Un componente en Angular es un elemento que está compuesto por:
 
-* Un archivo que será nuestro Template \(app.component.html\), el cual es nuestro HTML, que es el que se va a visualizar en la interfaz de usuario, la vista o en términos más simples lo que vas a ver en la página.
-* Un archivo de lógica, la cual es la que pondremos en un archivo .ts \(como por ejemplo app.component.ts\), ese archivo debe incluir una clase y esta es la que va a contener las propiedades que se van a usar en la vista \(HTML\) y los métodos que será las acciones que se ejecutarán en la vista. En este archivo de lógica también se incluye una metadata, que es definida con un decorador, que identifica a Angular como un componente.
-* Un archivo para el CSS \(podemos usar un preprocesador como SASS o LESS\), donde incluiremos los estilos, lo que nos ayuda a hacer bonita nuestra aplicación.
+* Un archivo que será nuestro Template (app.component.html), el cual es nuestro HTML, que es el que se va a visualizar en la interfaz de usuario, la vista o en términos más simples lo que vas a ver en la página.
+* Un archivo de lógica, la cual es la que pondremos en un archivo .ts (como por ejemplo app.component.ts), ese archivo debe incluir una clase y esta es la que va a contener las propiedades que se van a usar en la vista (HTML) y los métodos que será las acciones que se ejecutarán en la vista. En este archivo de lógica también se incluye una metadata, que es definida con un decorador, que identifica a Angular como un componente.
+* Un archivo para el CSS (podemos usar un preprocesador como SASS o LESS), donde incluiremos los estilos, lo que nos ayuda a hacer bonita nuestra aplicación.
 
-![](https://gblobscdn.gitbook.com/assets%2F-LbFy569GFu09bPpzMDJ%2F-LohnhqdNnTTn0E2cbaM%2F-Loho4STfHppM5gvSYpc%2Fcomponente.png?alt=media&token=0200ce92-2830-49e4-936c-f45c5cab9683)
+![](https://gblobscdn.gitbook.com/assets%2F-LbFy569GFu09bPpzMDJ%2F-LohnhqdNnTTn0E2cbaM%2F-Loho4STfHppM5gvSYpc%2Fcomponente.png?alt=media\&token=0200ce92-2830-49e4-936c-f45c5cab9683)
 
 La estructura de un componente es así:
 
@@ -81,7 +81,7 @@ Puedes ampliar la informacion de los componentes en el siguiente link: [componen
 
 ## 🧑‍🎨 Directivas 🧑‍🎨
 
-Las Directivas extienden la funcionalidad del HTML usando para ello una nueva sintaxis. Con ella podemos usar lógica que será ejecutada en el DOM \(Document Object Model\).
+Las Directivas extienden la funcionalidad del HTML usando para ello una nueva sintaxis. Con ella podemos usar lógica que será ejecutada en el DOM (Document Object Model).
 
 Cada Directiva que usamos tiene un nombre, y determina donde puede ser usada, sea en un elemento, atributo, componente o clase.
 
@@ -99,8 +99,8 @@ Se le llama Data Binding o enlace de Datos, a la técnica que nos sirve de puent
 
 Tipos Binding de datos
 
-* One Way \(una sola vía\) . Los cambios solo se reflejan en la vista o modelo, pero no hay sincronia entre ambos frente a una actualización de la data.
-* Two Way \(dos vias\). Se usa generalmente en los formularios, ya que se desea que el usuario ingrese la información, esta se actualice correctamente.
+* One Way (una sola vía) . Los cambios solo se reflejan en la vista o modelo, pero no hay sincronia entre ambos frente a una actualización de la data.
+* Two Way (dos vias). Se usa generalmente en los formularios, ya que se desea que el usuario ingrese la información, esta se actualice correctamente.
 
 ## Router
 
@@ -115,7 +115,8 @@ Los elementos principales del Router son:
 <router-outlet></router-outlet>
 ```
 
-* **Router Link:** Son los hipervinculos o enlaces donde especificaremos donde navegará nuestra página. Los hipervinculos o enlaces tradicionales normalmente son asi: 
+* **Router Link:** Son los hipervinculos o enlaces donde especificaremos donde navegará nuestra página.\
+  Los hipervinculos o enlaces tradicionales normalmente son asi:&#x20;
 
 ```markup
 <a href=""></a>
@@ -123,7 +124,7 @@ Los elementos principales del Router son:
 
 Donde en el href se incluía la dirección donde el usuario iba a navegar.
 
-En Angular los enlaces se manejan con el atributo routerLink, donde especificamos la ruta.  
+En Angular los enlaces se manejan con el atributo routerLink, donde especificamos la ruta.\
 
 
 ```markup
@@ -134,7 +135,7 @@ En Angular los enlaces se manejan con el atributo routerLink, donde especificamo
 
 Una SPA es una aplicación Web donde todas las pantallas con las que vaya a interactuar el usuario las muestra en una misma página.
 
-Antiguamente cuando se iniciaron a crear páginas Web, el contenido de ellas era estatico y teniamos que crear un documento por página y algunos elementos no se reutilizaban; hablando de un header o un menu. Cuando se empezaron a crear las páginas dinamicas, que el contenido venia desde una petición a una base de datos, se empezaron a crear páginas más robustas que terminarón en aplicaciones Web; y para reutilizar componentes y evitar crear multiples documentos HTML, conceptos como las SPA fueron introducidos para facilitarnos el trabajo.  
+Antiguamente cuando se iniciaron a crear páginas Web, el contenido de ellas era estatico y teniamos que crear un documento por página y algunos elementos no se reutilizaban; hablando de un header o un menu. Cuando se empezaron a crear las páginas dinamicas, que el contenido venia desde una petición a una base de datos, se empezaron a crear páginas más robustas que terminarón en aplicaciones Web; y para reutilizar componentes y evitar crear multiples documentos HTML, conceptos como las SPA fueron introducidos para facilitarnos el trabajo.\
 
 
 ## Formularios
@@ -147,7 +148,7 @@ Hay tres tipos de formularios en Angular:
 
 * Formularios de Plantillas - Template Driven
 
-Estos formularios nos permiten enlazar los datos hacer el data binding, desde el componente a la vista \(plantilla, HTML\), usando la sintaxis del banana box: \[\(nombreDeVariable\)\]. Este tipo de formularios son muy buenos para hacer cosas sencillas y nos permite usar el principio KISS \(acrónimo de Keep It Simple Stupid\).
+Estos formularios nos permiten enlazar los datos hacer el data binding, desde el componente a la vista (plantilla, HTML), usando la sintaxis del banana box: \[(nombreDeVariable)]. Este tipo de formularios son muy buenos para hacer cosas sencillas y nos permite usar el principio KISS (acrónimo de Keep It Simple Stupid).
 
 * Formularios Reactivos - Reactive Forms
 
@@ -155,7 +156,7 @@ Los formularios reactivos tienen la particularidad que la manipulación de los d
 
 * Formularios Dinámicos - Dynamic Forms
 
-Los formularios dinámicos, usan un patron usando una meta descripción para construirlos. Usan la API de los formularios reactivos en su construcción. 
+Los formularios dinámicos, usan un patron usando una meta descripción para construirlos. Usan la API de los formularios reactivos en su construcción.&#x20;
 
 
 
@@ -183,8 +184,6 @@ export class HeroService {
 
 }
 ```
-
-
 
 
 

@@ -11,7 +11,7 @@ description: >-
 
 ![](.gitbook/assets/ciclo-mariposa2.png)
 
-La Metamorfosis de Angular, no es una comunidad, la misión de este espacio es empoderar y brindar un lugar de aprendizaje. La filosofia que recomiendo es la de: 👉  "**Aprender Haciendo o** _**Learning by Doing**_".  
+La Metamorfosis de Angular, no es una comunidad, la misión de este espacio es empoderar y brindar un lugar de aprendizaje. La filosofia que recomiendo es la de: 👉  "**Aprender Haciendo o **_**Learning by Doing**_". &#x20;
 
 Siguiendo cada uno de los niveles aprenderás a crear una aplicación de Angular. Esta metodología ha sido seguida en un Workshop, pero no necesitas ingresar a alguna sesión, ver algún video o pertencer a una comunidad, para usar estos recursos; la idea es que a través de esta guía inicies tus pasitos 🦶 en este gran Framework llamado Angular 👍. Incluso si deseas crer tu propio Workshop o Taller, que desees compartir en tu comunidad, puedes tomar como base esta guía para hacerlo.
 
@@ -45,12 +45,10 @@ console.log('Hello World!!')
 * Encontraras unos hint o consejos, que te ayudarán a comprender mejor algún concepto o es una recomendación de código.
 
 {% hint style="info" %}
- Tip: Profundiza los conceptos que mencionan en esta guía.
+&#x20;Tip: Profundiza los conceptos que mencionan en esta guía.
 {% endhint %}
 
-Es una recomendación, si quieres sumergirte a este mundo de la Web, aprendas las bases de la programación Web \(HTML, CSS, JS\) a tu ritmo, sin presión, pero haciendo un buen enfasis en las bases, para que puedas tranquilamente trabajar con cualquier libreria o framework de JavaScript.
-
-
+Es una recomendación, si quieres sumergirte a este mundo de la Web, aprendas las bases de la programación Web (HTML, CSS, JS) a tu ritmo, sin presión, pero haciendo un buen enfasis en las bases, para que puedas tranquilamente trabajar con cualquier libreria o framework de JavaScript.
 
 
 

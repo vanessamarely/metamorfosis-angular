@@ -8,11 +8,11 @@ description: >-
 
 ## 🧠Introducción a JavaScript🧠
 
-![](../.gitbook/assets/guin-o%20%281%29.png)
+![](../.gitbook/assets/guin-o.png)
 
 JavaScript es un lenguaje de programación, se dice de él que es multiparadigma y es débilmente tipado. Es multiplataforma, ya que se puede utilizar en Windows, Linux o Mac. Se puede usar en cualquier navegador. Se puede usar en ambientes de cara al usuario y del lado del servidor.
 
-JavaScript permite la manipulación de cualquier elemento del documento \(DOM\) y tambien permite la manipulación de los estilos \(CSSOM\).
+JavaScript permite la manipulación de cualquier elemento del documento (DOM) y tambien permite la manipulación de los estilos (CSSOM).
 
 Es sencillo de aprender y en esta mini guía voy a contarte algunas caracteristicas sobre él.
 
@@ -32,7 +32,9 @@ Hay dos formas de incluir nuestro código JavaScript en nuestro documento HTML.
 
 ![](../.gitbook/assets/script-archivo.png)
 
-##  Variables
+\
+Variables
+---------
 
 ![](../.gitbook/assets/variable.png)
 
@@ -50,10 +52,10 @@ var a;
 var b;
 ```
 
-Desde la versión del ECMA2015, es posible crear nuestras variables usando la palabra reservada "const" y "let".  
+Desde la versión del ECMA2015, es posible crear nuestras variables usando la palabra reservada "const" y "let".\
 ****
 
-«**let**» ****permite hacer la reasignación de variables.
+«**let**» **** permite hacer la reasignación de variables.
 
 ![](../.gitbook/assets/let.png)
 
@@ -65,7 +67,7 @@ let b = 1;
 b = 5;
 ```
 
- ****«**const**» ****es una constante y no permite la reasignación de los valores a las variables.
+&#x20;**** «**const**» **** es una constante y no permite la reasignación de los valores a las variables.
 
 ![](../.gitbook/assets/const.png)
 
@@ -152,14 +154,14 @@ Para mostrar el resultado de una variable o una sentencia o expresión, podemos 
 
 Nos permite tomar decisiones sobre las instrucciones, incluso nos permite negar una instrucción.
 
-#### Negación \( ! \)
+#### Negación ( ! )
 
 ```javascript
 const isVisible = true;
 console.log(!isVisible)                // false
 ```
 
-#### AND \( && \)
+#### AND ( && )
 
 Para usar este operador se tiene en cuenta la tabla de verdad.
 
@@ -169,7 +171,7 @@ const valor2 = false;
 console.log(valor1 && valor2)            // false
 ```
 
-#### OR \( \|\| \)
+#### OR ( || )
 
 Para usar este operador se tiene en cuenta la tabla de verdad.
 
@@ -181,7 +183,7 @@ console.log(valor1 || valor2)            // true
 
 ### Operadores Relacionales
 
-Estos operadores son los que usamos para evaluar expresiones; en ellos podemos usar el mayor que \(&gt;\), menor que \(&lt;\), mayor o igual \(&gt;=\), menor o igual \(&lt;=\), igual que \(==\) diferente de \(!=\), estrictamente igual \(===\), y estrictamente diferente \(!==\).
+Estos operadores son los que usamos para evaluar expresiones; en ellos podemos usar el mayor que (>), menor que (<), mayor o igual (>=), menor o igual (<=), igual que (==) diferente de (!=), estrictamente igual (===), y estrictamente diferente (!==).
 
 ```javascript
 const numero1 = 3;
@@ -261,6 +263,7 @@ if(mayorEdad >= 18) {
 const mayorEdad = 18;
 if(mayorEdad >= 18) {
     console.log("Es mayor de edad");
+}    
 else if(mayorEdad > 18 && mayorEdad < 25) {
     console.log("Es un adulto joven");
 }else {
@@ -276,7 +279,7 @@ Se le pueden llamar, ciclos, bucles o loops, en ellos se evalua una condición n
 
 Un bucle for se repite como mencione hasta que la condición que se esta evaluando se cumpla.
 
-![](../.gitbook/assets/condicional%20%281%29.png)
+![](<../.gitbook/assets/condicional (1).png>)
 
 ```javascript
 const pasos = 5;
@@ -334,9 +337,9 @@ Existen dos tipos principales de funciones: las funciones llamadas **declaradas*
 
 ### Declaradas o Declarativas
 
-Las funciones declaradas inician con la palabra reservada function, seguido del nombre de la función, una lista de **parámetros** que puede ser opcional y ván entre parentesis, seguida de unas llaves donde van a ir nuestras sentencias.  Las funciones se declaran pero para poder usarlas, se deben hacer el llamado de ellas. Cuando creamos una función pasandole los **parámetros** entre los parentesis, al llamar la función debemos incluirle los **argumentos**. 
+Las funciones declaradas inician con la palabra reservada function, seguido del nombre de la función, una lista de **parámetros** que puede ser opcional y ván entre parentesis, seguida de unas llaves donde van a ir nuestras sentencias.  Las funciones se declaran pero para poder usarlas, se deben hacer el llamado de ellas. Cuando creamos una función pasandole los **parámetros** entre los parentesis, al llamar la función debemos incluirle los **argumentos**.&#x20;
 
-![](../.gitbook/assets/function%20%281%29.png)
+![](<../.gitbook/assets/function (1).png>)
 
 ```javascript
 function saludo(){
@@ -362,7 +365,7 @@ Habras notado que cuando se crea una función podemos pasarle **parámetros**, a
 
 La estructura de estas funciones es similar a la anterior, pero no inician con la palabra reservada function y no es obligatorio que tengan nombre. Esta función se puede almacenar en una variable o constante.
 
-![](../.gitbook/assets/expresada%20%281%29.png)
+![](<../.gitbook/assets/expresada (1).png>)
 
 ```javascript
 const saludo = function(){
@@ -421,7 +424,7 @@ const listaNumeros = [1, 2, 3];
 const arrayElementos = [1, 'abc', null];
 ```
 
-* Haciendo uso de la palabra reservada newArray\(\). En los paréntesis podemos asignarle los datos que va a tener nuestro array o declararlo vacío.
+* Haciendo uso de la palabra reservada newArray(). En los paréntesis podemos asignarle los datos que va a tener nuestro array o declararlo vacío.
 
 ```javascript
 const arrayVacio = new Array();                    // creamos un array vacío
@@ -442,7 +445,7 @@ Es posible hacer operaciones con los arrays, para ordenarlos, filtrar sus result
 
 ## Objetos
 
-Los objetos son colecciones de propiedades. Una propiedad se reconoce porque tiene un nombre \(o clave\), que será igual a un valor. Un apropiedad puede ser como lo mencione tener un nombre y un valor o ser una propiedad de tipo función, donde podemos ejecutar sentencias o instrucciones.
+Los objetos son colecciones de propiedades. Una propiedad se reconoce porque tiene un nombre (o clave), que será igual a un valor. Un apropiedad puede ser como lo mencione tener un nombre y un valor o ser una propiedad de tipo función, donde podemos ejecutar sentencias o instrucciones.
 
 ![](../.gitbook/assets/objeto.png)
 
@@ -452,9 +455,9 @@ Hay dos tipos de Objetos: Objeto **literal** o declarativo y el **constructor**.
 
 Este objeto se crea usando las llaves {} y dentro de ellas, podeos incluir una lista de propiedades con sus respectivos valores asociados.
 
-La clave \(key\) o nombre de la propiedad, puede tener un valor que puede ser de cualquier tipo de dato.
+La clave (key) o nombre de la propiedad, puede tener un valor que puede ser de cualquier tipo de dato.
 
-Los objetos se pueden crear a una constante se le asignan unas llaves, donde se crearia un objeto vacio, o se le asigna a la constante un objeto con las propiedades. Para crear un objeto vacio tambien se puede hacer mediante la palabra reservada new Object\(\)
+Los objetos se pueden crear a una constante se le asignan unas llaves, donde se crearia un objeto vacio, o se le asigna a la constante un objeto con las propiedades. Para crear un objeto vacio tambien se puede hacer mediante la palabra reservada new Object()
 
 ```javascript
 const usuario1 = new Object();             // creamos un objeto vacío
@@ -465,7 +468,7 @@ const usuario3 = {                         // creamos un objeto con propiedades
 };
 ```
 
-Para obtener los valores de un objeto, podemos hacerlo colocando el nombre del objeto seguido de un punto \(.\)y luego la propiedad, o podemos al nombre del objeto, colocarle luego de este entre corchetes el nombre de la propiedad.
+Para obtener los valores de un objeto, podemos hacerlo colocando el nombre del objeto seguido de un punto (.)y luego la propiedad, o podemos al nombre del objeto, colocarle luego de este entre corchetes el nombre de la propiedad.
 
 ```javascript
 const usuario3 = {                         // creamos un objeto con propiedades
@@ -486,7 +489,7 @@ const usuario3 = {                         // creamos un objeto con propiedades
 usuario3.lugarNacimiento = 'Medellin';
 ```
 
-Para eliminar una propiedad podemos hacer uso de una palabra reservada que se llama "**delete"**, que permite borrar las propiedades de los objetos. 
+Para eliminar una propiedad podemos hacer uso de una palabra reservada que se llama "**delete"**, que permite borrar las propiedades de los objetos.&#x20;
 
 ```javascript
 delete.usuario3.edad;
@@ -495,11 +498,11 @@ delete.usuario3.edad;
 
 ### Objeto Constructor
 
-Para estos objetos se usa una función llamada constructora, en esta el nombre de la función será el nombre del objeto y se le colocará este nombre usando la primera letra en mayuscula inicial, para hacer uso de esta función se deberá instancia el objeto usando la palabra reservada **new** \(u operador\).
+Para estos objetos se usa una función llamada constructora, en esta el nombre de la función será el nombre del objeto y se le colocará este nombre usando la primera letra en mayuscula inicial, para hacer uso de esta función se deberá instancia el objeto usando la palabra reservada **new** (u operador).
 
 ![](../.gitbook/assets/objeto-constructor.png)
 
-Dentro de la función constructura se hace uso de la palabra reservada **this**, la cual va  ahacer referencia al objeto. 
+Dentro de la función constructura se hace uso de la palabra reservada **this**, la cual va  ahacer referencia al objeto.&#x20;
 
 ```javascript
 function Usuario(nombre, edad){
@@ -510,11 +513,11 @@ function Usuario(nombre, edad){
 const usuarioAna= new usuario('Ana', 40);
 ```
 
-###  Prototipos
+### &#x20;Prototipos
 
-Los objetos de JavaScript provienen de Object y tienen en su interior un -_proto_- o prototype \(prototipo\), que nos permite heredar propiedades y métodos. Si necesitamos extender o sobreescribir el comportamiento de los objetos lo hacemos mediante prototype.
+Los objetos de JavaScript provienen de Object y tienen en su interior un -_proto_- o prototype (prototipo), que nos permite heredar propiedades y métodos. Si necesitamos extender o sobreescribir el comportamiento de los objetos lo hacemos mediante prototype.
 
-![](../.gitbook/assets/prototype%20%281%29.png)
+![](<../.gitbook/assets/prototype (1).png>)
 
 ```javascript
 function Persona(){
@@ -530,7 +533,7 @@ const persona1 = new Persona();
 console.log(persona1.nombre);                    // Ana
 ```
 
-### Clases \(Class\)
+### Clases (Class)
 
 Las clases son conjunto de elementos con caracteristicas comunes. Una Clase como un objeto contiene métodos y entre sus métodos se haya una función constructora, la cual recibe unos argumentos que se asignan como propiedades del this.
 
@@ -555,6 +558,4 @@ const persona1 = new Persona('Ana');
 
 
 Existen mucha información sobre JavaScript, funciones, tipos de datos, declaraciones, etc; que puedes ampliar en [mdn](https://developer.mozilla.org/es/docs/Web/JavaScript), que es una gran guía para consultar todas las dudas conceptuales que tengamos sobre este gran lenguaje de programación.
-
-
 

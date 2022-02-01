@@ -9,31 +9,31 @@ description: >-
 
 Para construir nuestra aplicación primero lo haremos de una forma sencilla online haciendo uso de stackblitz:
 
-## Paso 1: **Creemos nuestra App de Angular** ⭐️ <a id="paso-1-creemos-nuestra-app-de-angular"></a>
+## Paso 1: **Creemos nuestra App de Angular** ⭐️ <a href="#paso-1-creemos-nuestra-app-de-angular" id="paso-1-creemos-nuestra-app-de-angular"></a>
 
 Primero iremos a el inicio de **Stackbliz** y crearemos una App de Angular.
 
-![](https://gblobscdn.gitbook.com/assets%2F-LW1Rd6Lo-WMisT20MSI%2F-Lfm1buzeVgzyc9sla4K%2F-LfmF2EIn_D3rx1gxAJJ%2FScreen%20Shot%202019-05-25%20at%2010.41.44%20PM.png?alt=media&token=eff358e9-e6bb-4a39-a072-8de632c75ac2)
+![](https://gblobscdn.gitbook.com/assets%2F-LW1Rd6Lo-WMisT20MSI%2F-Lfm1buzeVgzyc9sla4K%2F-LfmF2EIn\_D3rx1gxAJJ%2FScreen%20Shot%202019-05-25%20at%2010.41.44%20PM.png?alt=media\&token=eff358e9-e6bb-4a39-a072-8de632c75ac2)
 
 Vamos al inicio de Stackblitz y damos click en el botón.
 
-![](https://gblobscdn.gitbook.com/assets%2F-LW1Rd6Lo-WMisT20MSI%2F-Lfm1buzeVgzyc9sla4K%2F-LfmFnfwUkx_kYXbVEwL%2FScreen%20Shot%202019-05-25%20at%2010.48.40%20PM.png?alt=media&token=3050fc43-1746-4a98-993d-94c250b1a2a3)
+![](https://gblobscdn.gitbook.com/assets%2F-LW1Rd6Lo-WMisT20MSI%2F-Lfm1buzeVgzyc9sla4K%2F-LfmFnfwUkx\_kYXbVEwL%2FScreen%20Shot%202019-05-25%20at%2010.48.40%20PM.png?alt=media\&token=3050fc43-1746-4a98-993d-94c250b1a2a3)
 
 Seleccionamos la opción de Angular
 
-![](https://gblobscdn.gitbook.com/assets%2F-LW1Rd6Lo-WMisT20MSI%2F-Lfm1buzeVgzyc9sla4K%2F-LfmGCMN4j_IokU0vzTP%2FScreen%20Shot%202019-05-25%20at%2010.52.23%20PM.png?alt=media&token=b9630837-c8a0-4388-93a5-0474b2f6f7e5)
+![](https://gblobscdn.gitbook.com/assets%2F-LW1Rd6Lo-WMisT20MSI%2F-Lfm1buzeVgzyc9sla4K%2F-LfmGCMN4j\_IokU0vzTP%2FScreen%20Shot%202019-05-25%20at%2010.52.23%20PM.png?alt=media\&token=b9630837-c8a0-4388-93a5-0474b2f6f7e5)
 
 Verás algo como esto 👆
 
-Seleccionamos el texto del archivo **app.component.html**, lo borramos \(presionando la tecla delete de tu compu 💻\) y guardamos los cambios, seleccionando en la parte superior la opción de 'Save' 💾
+Seleccionamos el texto del archivo **app.component.html**, lo borramos (presionando la tecla delete de tu compu 💻) y guardamos los cambios, seleccionando en la parte superior la opción de 'Save' 💾
 
-![](https://gblobscdn.gitbook.com/assets%2F-LW1Rd6Lo-WMisT20MSI%2F-Lfm1buzeVgzyc9sla4K%2F-LfmHJVm7_7cFa8fmSA3%2FWebp.net-gifmaker%20%281%29.gif?alt=media&token=8924bfbd-4c41-4857-b397-9e9f32e455de)
+![](https://gblobscdn.gitbook.com/assets%2F-LW1Rd6Lo-WMisT20MSI%2F-Lfm1buzeVgzyc9sla4K%2F-LfmHJVm7\_7cFa8fmSA3%2FWebp.net-gifmaker%20\(1\).gif?alt=media\&token=8924bfbd-4c41-4857-b397-9e9f32e455de)
 
 ## Paso 2: Crearemos un formulario ✍️
 
 Vamos a crear un formulario con un campo de texto, donde pondremos el nombre de usuario con el que nos vamos a autenticar en nuestra App. Adicionalmente tendrá un botón para enviar el texto que ingresaremos en el formulario.
 
-Para el formulario añadiremos en la vista en el **app.component.html**, algunas etiquetas, como estas: 
+Para el formulario añadiremos en la vista en el **app.component.html**, algunas etiquetas, como estas:&#x20;
 
 {% code title="app.component.html" %}
 ```markup
@@ -105,9 +105,9 @@ En el html vamos a hacer el binding, para enlazar la data que será diligenciada
 />
 ```
 
-En el **ngModel** \(binding\), asignaremos el objeto que creamos en el componente model, con la propiedad **model.username**.
+En el **ngModel** (binding), asignaremos el objeto que creamos en el componente model, con la propiedad **model.username**.
 
-Como el botón en nuestras etiquetas es de tipo submit, en la etiqueta form añadiremos un evento, que llamará a la función que creamos. Ademas crearemos una referencia al formulario: _**\#form**_ \(esta referencia nos permite acceder al DOM\).
+Como el botón en nuestras etiquetas es de tipo submit, en la etiqueta form añadiremos un evento, que llamará a la función que creamos. Ademas crearemos una referencia al formulario: _**#form**_ (esta referencia nos permite acceder al DOM).
 
 ```markup
 <form #form="ngForm" (ngSubmit)="login(form.value)">
@@ -155,7 +155,7 @@ export class AppModule { }
 ```
 {% endcode %}
 
-Importamos unas dependencias en nuestro nuevo archivo llamado **login.service.ts**,  y añadimos en el constructor lo siguiente: **http: HttpClient** , haciendo uso de la inyección de dependencias \(Patron de diseño\). Este http, va a ser uso de lo que tenga el HttpClient, que este hace parte del nuevo modulo que incluimos en el app.module.ts
+Importamos unas dependencias en nuestro nuevo archivo llamado **login.service.ts**,  y añadimos en el constructor lo siguiente: **http: HttpClient** , haciendo uso de la inyección de dependencias (Patron de diseño). Este http, va a ser uso de lo que tenga el HttpClient, que este hace parte del nuevo modulo que incluimos en el app.module.ts
 
 {% code title="login.service.ts" %}
 ```typescript
@@ -176,7 +176,7 @@ En nuestro archivo **login.service.ts** crearemos una función para obtener la d
 
 En nuestra función incluimos un return que hace uso del parametro private del constructor que llama al get propio del http, que hace uso de las funciones del HttpClient, que nos hace este método es que nos creo un Observable que va a contener la data que se recibe del api. En nuestro caso estamos usando la api de github, entonces en la función getApi, vamos a retornar ese observable que contiene la data que recibimos de github.
 
-Como parametro de this.http.get\( parametros \) puedes observar a continuación que le pasamos nuestra variable **apiRoot** adicional le pasamos el username que es el que obtendremos de la función del componente \(la data que digita el usuario en nuestro formulario\) y al colocarle al final "**/repos**", obtendremos la lista de repositorios, de no incluirsela, obtendremos solo la información del usuario dueño de la cuenta de github.
+Como parametro de this.http.get( parametros ) puedes observar a continuación que le pasamos nuestra variable **apiRoot** adicional le pasamos el username que es el que obtendremos de la función del componente (la data que digita el usuario en nuestro formulario) y al colocarle al final "**/repos**", obtendremos la lista de repositorios, de no incluirsela, obtendremos solo la información del usuario dueño de la cuenta de github.
 
 {% code title="login.service.ts" %}
 ```typescript
@@ -226,7 +226,7 @@ Lo anterior nos daria como resultado la información de la cuenta perteneciente 
 
 En nuestro archivo **app.component.ts**, en nuestra función **login**, nos vamos a subscribir al orservable, que retorna la función getApi, que retorna  la petición que hacemos de los datos, usando la variable que definimos con la ruta del API de **Github**.
 
-También importaremos en nuestro **app.component.ts** el servicio que creamos, **LoginService,** y crearemos una función **constructor** donde declararemos una función privada del servicio. ****
+También importaremos en nuestro **app.component.ts** el servicio que creamos, **LoginService,** y crearemos una función **constructor** donde declararemos una función privada del servicio. ****&#x20;
 
 {% code title="app.component.ts" %}
 ```typescript
@@ -253,9 +253,9 @@ export class AppComponent {
 ```
 {% endcode %}
 
-En la función login\(\), vamos a  crear una constante donde asignamos la propiedad del username. 
+En la función login(), vamos a  crear una constante donde asignamos la propiedad del username.&#x20;
 
-En el servicio login, como notaste retornamos una función, que trae la respuesta de nuestra API. En esa función hacemos uso del  [HttpClient](https://angular.io/api/common/http/HttpClient), que es un observable, entonces en nuestro componente para obtener la data necesitamos subscribirnos. 
+En el servicio login, como notaste retornamos una función, que trae la respuesta de nuestra API. En esa función hacemos uso del  [HttpClient](https://angular.io/api/common/http/HttpClient), que es un observable, entonces en nuestro componente para obtener la data necesitamos subscribirnos.&#x20;
 
 {% code title="app.component.ts" %}
 ```typescript
@@ -288,13 +288,13 @@ export class AppComponent {
 ```
 {% endcode %}
 
-Ahora podemos probar el llamado de nuestra API colocando en el campo de texto el nombre de un usuario de **Github**. Si abres la consola de **Stackblitz** podrás ver el resultado de nuestro **console.log\(response\)**.
+Ahora podemos probar el llamado de nuestra API colocando en el campo de texto el nombre de un usuario de **Github**. Si abres la consola de **Stackblitz** podrás ver el resultado de nuestro **console.log(response)**.
 
 ## Paso 5: Mostremos el resultado del API 📰
 
-Crearemos una variable llamada **responseList**, donde almacenaremos el resultado del llamado de nuestra API. 
+Crearemos una variable llamada **responseList**, donde almacenaremos el resultado del llamado de nuestra API.&#x20;
 
-Si observas la url de nuestra API, en el servicio al final tiene '/**repos**' \(en el apiRoot\), con esta palabra traeremos la lista de todos los repositorios del usuario que estamos consultando, puedes probar quitándole esta palabra y observarás que traerás la información de usuario \(la imagen de perfil, su id en Github, entre otros datos\) .
+Si observas la url de nuestra API, en el servicio al final tiene '/**repos**' (en el apiRoot), con esta palabra traeremos la lista de todos los repositorios del usuario que estamos consultando, puedes probar quitándole esta palabra y observarás que traerás la información de usuario (la imagen de perfil, su id en Github, entre otros datos) .
 
 {% code title="app.component.ts" %}
 ```typescript
@@ -371,7 +371,7 @@ La data se va a mostrar muy desordenada, así que nuestra tarea es ordenarla, en
 
 ## Crea tu  App usando el angular-cli
 
-Para crear esta misma aplicación localmente debes tener instalado node.js y un IDE \(Visual Studio Code es una buena opcion\). Una vez lo instales debemos en tu terminal preferida, instalar Angular usando el siguiente comando:
+Para crear esta misma aplicación localmente debes tener instalado node.js y un IDE (Visual Studio Code es una buena opcion). Una vez lo instales debemos en tu terminal preferida, instalar Angular usando el siguiente comando:
 
 ```bash
 npm install -g @angular/cli
@@ -390,17 +390,17 @@ npm -v
 ng new my-app
 ```
 
-Con ese comando indicamos que queremos crear una nueva aplicación. Cuando estes instalando te va a preguntar si deseas añadir el routing, le escribes  "Y" \(seria yes\), te mostrá algo similar a esto:  'Would you like to add Angular Routing?'. Eso es lo unico que necesitamos decirle Y.  
+Con ese comando indicamos que queremos crear una nueva aplicación. Cuando estes instalando te va a preguntar si deseas añadir el routing, le escribes  "Y" (seria yes), te mostrá algo similar a esto:  'Would you like to add Angular Routing?'. Eso es lo unico que necesitamos decirle Y.\
 Cuando te pregunte por el stylescheet selecciona CSS.
 
 Para ejecutar nuestra aplicación debemos ir a la carpeta que se genero, ejecutamos lo siguiente en la terminal:
 
-```text
+```
 cd my-app
 ng serve --open
 ```
 
-![](../.gitbook/assets/image%20%283%29%20%281%29.png)
+![](<../.gitbook/assets/image (3) (2) (2).png>)
 
 Una vez ejecutado nuestro proyecto, podremos ver el hola por defecto de Angular, similar al de stackblitz.
 
@@ -408,27 +408,26 @@ El archivo de routing es para crear una SPA, para darle más complejidad a nuest
 
 Angular tiene algo que se llama schematics, que te permite ejecutar pequeñas instrucciones para generar los archivos y añadir las rutas respectivas donde se necesitan. Para crear los componentes, lo haremos así:
 
-```text
+```
 ng generate component <nameComponent>
 ```
 
 Se puede usar la forma abreviada:
 
-```text
+```
 ng g c <nameComponent>
 ```
 
 Para crear un servicio, lo haremos así:
 
-```text
+```
 ng generate service <nameService>
 ```
 
 Se puede usar la forma abreviada:
 
-```text
+```
 ng g s <nameService>
 ```
 
 Puedes basarte en el ejercicio que hiciste en Stackblitz para hacer este y una vez lo termines, subes a Github tu ejercicio.
-
