@@ -44,7 +44,7 @@ y hay otras etiquetas que no requieren un par, se puede hacer el cierre en una s
 
 ### Sintaxis de un elemento
 
-Un elemento de un documento HTML, tiene una representaciòn o significado semántico. El _**\<title>\</title>**_ representa el titulo del documento y solo se incluye en el _**\<head\</\<head>**_ del documento.
+Un elemento de un documento HTML, tiene una representaciòn o significado semántico. El _**\<title>\</title>**_ representa el titulo del documento y solo se incluye en el _**\<head>\</\<head>**_ del documento.
 
 La mayoria de etiquetas tienen un tag o etiqueta de inicio y de cierre, y pueden contener atributos, que definen unas propiedades adicionales. Por ejemplo:
 
